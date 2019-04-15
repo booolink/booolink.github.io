@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="mmobile.css">
+</head>
+
+<body>
+
+    <nav class="bar">
+        <img class="logo" src="http://e226.nsysu.edu.tw/ezfiles/252/1252/img/1596/DOLogo-col-tr-1885x1506.png" alt="">
+        <div id="bor" class="slo">
+            <div id="" class="red"></div>
+            <div id="" class="red"></div>
+            <div id="" class="red"></div>
+        </div>
+    </nav>
+    <ul class="link_all">
+        <li id="link1" class="link "><a href="#">首頁</a></li>
+        <li id="link2" class="link "><a href="#">商品</a></li>
+        <li id="link3" class="link "><a href="#">關於我們</a>
+            <ul id="loo"class="prt">
+                <li id="link4" class="pry "><a href="#">地址</a></li>
+                <li id="link5" class="pry "><a href="#">電話</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        var l3 = document.querySelector("#link3")
+        var prt = document.querySelector("#loo")        
+       
+        l3.addEventListener('click', clickHendler)
+
+        function clickHendler() {
+            if (prt.style.display =="none") {
+                prt.style.display = "block"
+            } else {
+                prt.style.display = "none"
+               
+            }
+        }
+    </script>
+    <img class="icon1"src="https://cdn0.iconfinder.com/data/icons/essentials-line/100/Menu-512.png" alt="">
+    <img class="icon2"src="https://cdn.emojidex.com/emoji/seal/three_lines_converging_left.png?1422536861" alt="">
+    <ul id="nu" class="nm">
+        <li class="nk"><a href="#">地址</a></li>
+        <li class="nk"><a href="#">電話</a></li>
+        <li class="nk"><a href="#">線上客服</a></li>
+    </ul>
+    <script>
+    var icon1 =document.querySelector('.icon1')
+    var icon2 =document.querySelector('.icon2')
+    var nm    =document.querySelector('.nm')
+
+    icon1.addEventListener('mousedown', c0hendler)
+    icon1.addEventListener('click', c1hendler)
+    icon2.addEventListener('click', c2hendler)
+    icon2.addEventListener('click', c3hendler)
+    function c1hendler(){       
+        icon2.style.display ="block"
+        icon1.style.display = "none"    
+    }
+    function c2hendler(){       
+        icon1.style.display ="block"
+        icon2.style.display = "none"    
+    }
+    function c0hendler() {
+        nm.style.display='block'        
+    }
+    function c3hendler() {
+        nm.style.display='none'        
+    }
+
+    </script>
+
+
+</body>
+
+</html>
