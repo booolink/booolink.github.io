@@ -98,7 +98,7 @@ img{
     max-height: 598px;
     margin: auto;
     /* background-color: aqua;*/
-    background-image: url("/img/RE2lEVR.jpg");
+    background-image: url("../img/RE2lEVR.jpg");
     background-size: cover;
     background-position: center;    
 }
@@ -144,28 +144,28 @@ h3{
 #box1-1{    
     width: 100%;
     height: 100%;
-    background-image: url('/img/RE2FHD0.png');
+    background-image: url('../img/RE2FHD0.png');
     background-size: cover;
     background-position: center;
 }
 #box2-1{    
     width: 100%;
     height: 100%;
-    background-image: url('/img/RWfbJT.jpg');
+    background-image: url('../img/RWfbJT.jpg');
     background-size: cover;
     background-position: center;
 }
 #box3-1{    
     width: 100%;
     height: 100%;
-    background-image: url('/img/RE1uWfh.jpg');
+    background-image: url('../img/RE1uWfh.jpg');
     background-size: cover;
     background-position: center;
 }
 #box4-1{    
     width: 100%;
     height: 100%;
-    background-image: url('/img/RWlux6.jpg');
+    background-image: url('../img/RWlux6.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -194,32 +194,32 @@ i{
     height: 33vw;
     max-height: 646px;
     margin: auto;
-    background-image: url("/img/RW5kpU.jpg");
+    background-image: url("../img/RW5kpU.jpg");
     background-size: cover;
     background-position: center;  
     margin-top: 150px;  
 }
 #box5-1{    
     width: 100%;
-    background-image: url('/img/RE1CmIw.jpg');
+    background-image: url('../img/RE1CmIw.jpg');
     background-size: cover;
     background-position: center;
 }
 #box6-1{    
     width: 100%;
-    background-image: url('/img/RE2mheW.jpg');
+    background-image: url('../img/RE2mheW.jpg');
     background-size: cover;
     background-position: center;
 }
 #box7-1{    
     width: 100%;
-    background-image: url('/img/REOLLm.png');
+    background-image: url('../img/REOLLm.png');
     background-size: cover;
     background-position: center;
 }
 #box8-1{    
     width: 100%;
-    background-image: url('/img/RE2OfW4.jpg');
+    background-image: url('../img/RE2OfW4.jpg');
     background-size: cover;
     background-position: center;
 }
