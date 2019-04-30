@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+<style>
+   
+
+    .imgall {
+        width: 100%;
+        display: flex;
+    }
+
+    .imgll {
+        width: calc(100% / 3);
+    }
+</style>
+
+<body>
+    <div calss="imgall">
+        <div class="imgll">
+            <a href="images/a1.jpg" data-lightbox="image-1" data-title="My caption">
+                <img class="cloooo" src="images/a1.jpg" alt="">
+            </a>
+        </div>
+
+        <div class="imgll">
+            <a href="images/a3.jpg" data-lightbox="image-1" data-title="My caption">
+                <img class="cloooo" src="images/a2.jpg" alt="">
+            </a>
+        </div>
+
+        <div class="imgll">
+            <a href="images/a1.jpg" data-lightbox="image-1" data-title="My caption">
+                <img class="cloooo" src="images/a3.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+
+</html>

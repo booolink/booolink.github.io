@@ -28,7 +28,8 @@ a{
     font-size: 13px;
 }
 .boxtop{
-    max-width: calc(1600px + 10%);
+    width: 100%;
+    /* max-width: calc(1600px + 10%); */
     margin-top: 1px;
 }
 .nav_all{
@@ -70,7 +71,7 @@ img{
     
 }
 #menu_R{
-    width: 422px;
+    width: calc(422px - 15px);
     max-width: 422px;
     height: 100%;
     float: right;
@@ -80,15 +81,16 @@ img{
 }
 #icon4{
     margin-top: 12px;
-    margin-left: -15px;
+    margin-left: 0px;
 }
 .tapon1:hover p{
     /* text-decoration: underline; */
     border-bottom: 2px solid;     
 }
 /*---------------上面連結列樣式---------------*/
-.box_mastr{
-    max-width: calc(1600px + 10%);
+.box_mastr .box_mastr2{
+    width: 100%;
+    /* max-width: calc(1600px + 10%); */
 }
 #img_top{
     width: 90%;
@@ -117,7 +119,8 @@ img{
     float: left;    
 }
 .box_sliver_all{
-    max-width: calc(1600px + 10%);
+    width: 100%;
+    /* max-width: calc(1600px + 10%); */
     margin-top: 50px; 
 }
 #box1,#box5{
@@ -244,14 +247,16 @@ h2{
     margin-top: 200px;
 }
 .footer_top{
-    max-width: calc(1600px + 10%);
+    width: 100%;
+    /* max-width: calc(1600px + 10%); */
     height: 300px;
     margin: auto;
     background-color:rgb(224, 224, 224);
     margin-top: 50px;
 }
 .footer_down{
-    max-width: calc(1600px + 10%);
+    width: 100%;
+    /* max-width: calc(1600px + 10%); */
     margin: auto;
     background-color:rgb(224, 224, 224);
     height: 72px;

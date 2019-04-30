@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="swiper/dist/css/swiper.css">
+    <style>
+    .swiper-pagination-bullet {
+        background-color: blueviolet;
+    }
+
+   
+
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+                <img class="cloooo" src="images/a1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                    <img class="cloooo" src="images/a2.jpg" alt="">
+                </div>
+            <div class="swiper-slide"> 
+                    <img class="cloooo" src="images/a3.jpg" alt="">
+            </div>
+        <!-- Add Arrows -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 
+    <div calss="imgall">
+        <div class="imgll">
+            <a href="images/a1.jpg" data-lightbox="image-1" data-title="My caption">
+                <img class="cloooo" src="images/a1.jpg" alt="">
+            </a>
+        </div>
+
+        <div class="imgll">
+            <a href="images/a3.jpg" data-lightbox="image-1" data-title="My caption">
+                <img class="cloooo" src="images/a2.jpg" alt="">
+            </a>
+        </div>
+
+        <div class="imgll">
+            <a href="images/a1.jpg" data-lightbox="image-1" data-title="My caption">
+                <img class="cloooo" src="images/a3.jpg" alt="">
+            </a>
+        </div>
+    </div> -->
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="swiper/dist/js/swiper.min.js"></script>
+    <!--先讀取js 才能讀取var變數-->
+    <script>
+
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        });
+
+    </script>
+</body>
+
+</html>
