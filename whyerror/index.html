@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/micsoftnew.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/micsoftnew.css">
 </head>
 
 <body>
@@ -38,7 +38,25 @@
             <ul id="menu_R" class="menu">
                 <li id="mic" class="tapon tapon1"><a href="#">
                         <p>所有Microsoft</p>　<i id="icon1" class="fas fa-angle-down"></i>
-                    </a></li>
+                    </a>
+                    <ul class="list_all">
+                        <li class="list"><a class="list_d"href="#">連結一</a></li>
+                        <li class="list"><a class="list_d"href="#">連結二</a></li>
+                        <li class="list"><a class="list_d"href="#">連結三</a></li>
+                    </ul>
+                </li>
+                <script>
+                var butn = document.querySelector('#mic')
+                var listbb = document.querySelector('.list_all')
+
+                butn=addEventListener('click',butnhandler)
+
+                function butnhandler (){
+                    listbb.classList.toggle('listoo')
+                }
+                </script>
+
+
                 <li class="tapon tapon1 mn1"><a href="#">
                         <p>搜尋</p>　<i id="icon2" class="fas fa-search fa-flip-horizontal "></i>
                     </a></li>
@@ -50,8 +68,15 @@
             </ul>
         </div>
     </nav>
+<nav class="pad_nav">
+    <div class="pad_menu"></div>
+    <div class="pad_search"></div>
+    <div class="pad_logo"></div>
+    <div class="pad_chiachia"></div>
+    <div class="pad_login"></div>
 
 
+</nav>
 
     <nav class="box_mastr">
         <!-- <div id="img_top" class='img_top'> -->
@@ -62,11 +87,11 @@
                 <div class="swiper-slide imgin" style="background-image:url(img/RE2FZRD.png)"></div>
 
                 <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white ggg"></div>
                 <div class="swiper-button-prev swiper-button-white"></div>
             </div>
             <!-- Add Pagination -->
-            <div class="swiper-pagination swiper-pagination-white"></div>
+            <div class="swiper-pagination"></div>
 
         </div>
     </nav>

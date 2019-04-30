@@ -30,6 +30,7 @@ a{
 .boxtop{
     max-width: calc(1600px + 10%);
     margin-top: 1px;
+    margin: auto;
 }
 .nav_all{
     width: 90%;
@@ -80,25 +81,62 @@ img{
 }
 #icon4{
     margin-top: 12px;
-    margin-left: -15px;
+    
 }
-.tapon1:hover p{
+.tapon1:hover p {
     /* text-decoration: underline; */
     border-bottom: 2px solid;     
 }
-/*---------------上面連結列樣式---------------*/
-.box_mastr{
-    max-width: calc(1600px + 10%);
+#mic{
+    position: relative;
 }
+.list_all{
+    width: 300px;
+    background-color: rgba(162, 0, 255, 0.541);
+    border-radius: 5px;
+    position: absolute;    
+    z-index: 5;
+    margin-top: 10px;
+    display: none;
+    left: -100px;
+}
+.list{
+padding-left: 5px;
+margin-left: 10px;
+margin: 15px;
+float: left;
+
+}
+.list_d{
+    font-size: 16pt;
+    color:white;
+}
+.list_d:hover{
+    border-bottom: 2px solid;  
+    color: rgb(226, 162, 43);
+}
+.listoo{
+    display: block;
+}
+.boxtop{
+    display: block;
+}
+.pad_nav{
+    display: none;
+}
+
+/*---------------上面連結列樣式---------------*/
+
 #img_top {
     /* min-width: 100%; */
     /* background-color: aqua; */
     /* background-image: url("img/RE2lEVR.jpg"); */
-    width: 100%;
+    max-width: calc(1600px + 10%);
+    /* width: 100%; */
     padding: 0% 5%;    
     height: 33vw;
     max-height: 598px;
-    margin: auto;         
+    margin: auto;  
 }
 .imgin{
     background-size: cover;
@@ -110,7 +148,7 @@ color: blue;
 
 .box_sliver{
     width: 90%;
-    height: 100%;
+    height: 12vw;
     margin: auto;
     display: flex;   
     /* margin-top: 50px; */
@@ -122,9 +160,11 @@ color: blue;
     padding: 0px 12px 0px 12px; 
     float: left;    
 }
-.box_sliver_all{
+.box_sliver_all {
     max-width: calc(1600px + 10%);
     margin-top: 50px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 #box1,#box5{
     padding-left: 0px;
@@ -196,9 +236,11 @@ i{
     
 }
 #img_top1{
-    width: 90%;
+    /* width: 90%; */
+    max-width: calc(1600px + 10%);
+    padding: 0% 5%; 
     height: 33vw;
-    max-height: 646px;
+    /* max-height: 646px; */
     margin: auto;
     /* background-image: url("img/RW5kpU.jpg"); */
     background-size: cover;
@@ -242,25 +284,27 @@ h2{
 }
 /*------------------footer------------------------------------*/
 .grud{
-    width: 90%;
+    /* width: 90%; */
     /* height: 100px; */
     /* background-color: aqua; */
+    max-width: 90%;
     display: block;
     margin: auto;
     margin-top: 200px;
 }
 .footer_top{
-    max-width: calc(1600px + 10%);
+    max-width: 100%;
     height: 300px;
     margin: auto;
     background-color:rgb(224, 224, 224);
     margin-top: 50px;
 }
 .footer_down{
-    max-width: calc(1600px + 10%);
+    max-width: 100%;
     background-color:rgb(224, 224, 224);
     height: 72px;
     padding: 30px 5% 16px;
+    margin: auto;
 }
 .flist,#flistlast{
     margin:3px 10px 0px 20px;
@@ -272,4 +316,23 @@ h2{
 .footer_list,.footer_down{
     display: flex;
     justify-content: space-between;
+}
+.swiper-pagination-bullet{
+    background-color: green;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .boxtop{
+        display: none;
+    }
+    .pad_nav{
+        display: block;
+    }
+    .pad_menu{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+    }
 }
