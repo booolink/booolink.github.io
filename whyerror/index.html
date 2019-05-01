@@ -19,64 +19,142 @@
             <div id="menu_C">
                 <ul class='menu'>
                     <li class="tapon tapon1"><a href="#">
-                            <p>Office</p>
+                            <p class="bs">Office</p>
                         </a></li>
                     <li class="tapon tapon1"><a href="#">
-                            <p>Windows</p>
+                            <p class="bs">Windows</p>
                         </a></li>
                     <li class="tapon tapon1"><a href="#">
-                            <p>Surface</p>
+                            <p class="bs">Surface</p>
                         </a></li>
                     <li class="tapon tapon1"><a href="#">
-                            <p>Xbox</p>
+                            <p class="bs">Xbox</p>
                         </a></li>
                     <li class="tapon tapon1"><a href="#">
-                            <p>支援</p>
+                            <p class="bs">支援</p>
                         </a></li>
                 </ul>
             </div>
             <ul id="menu_R" class="menu">
                 <li id="mic" class="tapon tapon1"><a href="#">
-                        <p>所有Microsoft</p>　<i id="icon1" class="fas fa-angle-down"></i>
+                        <p class="bs">所有Microsoft</p>
                     </a>
                     <ul class="list_all">
-                        <li class="list"><a class="list_d"href="#">連結一</a></li>
-                        <li class="list"><a class="list_d"href="#">連結二</a></li>
-                        <li class="list"><a class="list_d"href="#">連結三</a></li>
+                        <ul class="list_1 list_bb">
+                            <p>軟體</p>
+                            <li class="list"><a class="list_d" href="#">Windows 應用程式</a></li>
+                            <li class="list"><a class="list_d" href="#">OneDrive</a></li>
+                            <li class="list"><a class="list_d" href="#">Outlook</a></li>
+                            <li class="list"><a class="list_d" href="#">Skype</a></li>
+                            <li class="list"><a class="list_d" href="#">OneNote</a></li>
+                        </ul>
+                        <ul class="list_2 list_bb">
+                            <p>個人電腦和設備</p>
+                            <li class="list"><a class="list_d" href="#">PCs & tablets</a></li>
+                            <li class="list"><a class="list_d" href="#">電腦配件</a></li>
+                        </ul>
+                        <ul class="list_3 list_bb">
+                            <p>娛樂</p>
+                            <li class="list"><a class="list_d" href="#">Xbox 與遊戲</a></li>
+                            <li class="list"><a class="list_d" href="#">遊戲</a></li>
+                            <li class="list"><a class="list_d" href="#">Windows 遊戲</a></li>
+                        </ul>
+                        <ul class="list_4 list_bb">
+                            <p>商務適用</p>
+                            <li class="list"><a class="list_d" href="#">Microsoft Azure</a></li>
+                            <li class="list"><a class="list_d" href="#">Microsoft Dynamics 365</a></li>
+                            <li class="list"><a class="list_d" href="#">Microsoft 365</a></li>
+                            <li class="list"><a class="list_d" href="#">Microsoft Industry</a></li>
+                            <li class="list"><a class="list_d" href="#">資料平台</a></li>
+                        </ul>
+                        <ul class="list_5 list_bb">
+                            <p>Developer & IT</p>
+                            <li class="list"><a class="list_d" href="#">.NET</a></li>
+                            <li class="list"><a class="list_d" href="#">Visual Studio</a></li>
+                            <li class="list"><a class="list_d" href="#">Windows Server</a></li>
+                            <li class="list"><a class="list_d" href="#">開發 Windows 應用程式</a></li>
+                            <li class="list"><a class="list_d" href="#">文件</a></li>
+                        </ul>
+                        <ul class="list_6 list_bb">
+                            <p>其他</p>
+                            <li class="list"><a class="list_d" href="#">Microsoft Store</a></li>
+                            <li class="list"><a class="list_d" href="#">Microsoft Rewards</a></li>
+                            <li class="list"><a class="list_d" href="#">免費下載與安全性</a></li>
+                            <li class="list"><a class="list_d" href="#">教育</a></li>
+                            <li class="list"><a class="list_d" href="#">禮品卡</a></li>
+                        </ul>
                     </ul>
+
+
+
+                    <i id="icon1" class="fas fa-angle-down"></i>
+
                 </li>
+
                 <script>
-                var butn = document.querySelector('#mic')
-                var listbb = document.querySelector('.list_all')
+                    var butn = document.querySelector('#mic')
+                    var listbb = document.querySelector('.list_all')
 
-                butn=addEventListener('click',butnhandler)
+                    butn.addEventListener('click', butnhandler)
 
-                function butnhandler (){
-                    listbb.classList.toggle('listoo')
-                }
+                    function butnhandler() {
+                        listbb.classList.toggle('listoo')
+                        butn.classList.toggle('listcc')
+                        console.log('listoo')
+                    }
                 </script>
 
 
                 <li class="tapon tapon1 mn1"><a href="#">
-                        <p>搜尋</p>　<i id="icon2" class="fas fa-search fa-flip-horizontal "></i>
-                    </a></li>
+                        <p class="bs">搜尋</p>
+                    </a><i id="icon2" class="fas fa-search fa-flip-horizontal "></i>
+                </li>
                 <li class="tapon tapon1 mn1"><a href="#">
-                        <p>購物車</p> <i id="icon3" class="fas fa-shopping-cart fa-1g"></i>
-                    </a></li>
+                        <p class="bs">購物車</p>
+                    </a> <i id="icon3" class="fas fa-shopping-cart fa-1g"></i>
+                </li>
                 <li class="tapon mn1"><a href="#">登入</a></li>
                 <i id="icon4" class="far fa-user-circle fa-2x"></i>
             </ul>
         </div>
     </nav>
-<nav class="pad_nav">
-    <div class="pad_menu"></div>
-    <div class="pad_search"></div>
-    <div class="pad_logo"></div>
-    <div class="pad_chiachia"></div>
-    <div class="pad_login"></div>
 
+    <nav class="pad_nav">
+        <div class="pad_menu">
+            <div id="line1" class="line"></div>
+            <div id="line2" class="line"></div>
+            <div id="line3" class="line"></div>
+        </div>
+        <div class="pad_search">
+            </a><i id="pad_search" class="fas fa-search fa-flip-horizontal fa-3x"></i>
+        </div>
+        <div class="pad_logo">
+            <div id="pad_logo" class="pad_img"><img src="img/RE1Mu3b.png" alt=""></div>
+        </div>
+        <div class="pad_login">
+            <i id="pad_login" class="far fa-user-circle fa-2x"></i>
+        </div>
+        <div class="pad_chiachia">
+            </a> <i id="pad_chiachia" class="fas fa-shopping-cart fa-2x"></i>
+        </div>
 
-</nav>
+    </nav>
+
+    <script>
+        var pad_menu = document.querySelector('.pad_menu')
+        var line1 = document.querySelector('#line1')
+        var line2 = document.querySelector('#line2')
+        var line3 = document.querySelector('#line3')
+
+        pad_menu.addEventListener('click', menutouch)
+
+        function menutouch() {
+            line1.classList.toggle('line1')
+            line2.classList.toggle('line2')
+            line3.classList.toggle('line3')
+        }
+
+    </script>
 
     <nav class="box_mastr">
         <!-- <div id="img_top" class='img_top'> -->
