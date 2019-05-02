@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- /pc/ ----------------------------------------------------       -->
     <nav class="boxtop">
         <div id="" class="nav_all">
             <div id="logo" class="img"><img src="img/RE1Mu3b.png" alt=""></div>
@@ -118,12 +119,58 @@
             </ul>
         </div>
     </nav>
-
+    <!-- /pad/ ------------------------------------------------------------>
     <nav class="pad_nav">
         <div class="pad_menu">
             <div id="line1" class="line"></div>
             <div id="line2" class="line"></div>
             <div id="line3" class="line"></div>
+
+            <ul class="pad_list_all pad_list_allco">
+                <ul class="pad_list_1 pad_list_ulbb">
+                    <a href="#"><p>軟體</p></a>  
+                    <!-- <li class="list"><a class="list_d" href="#">Windows 應用程式</a></li>
+                        <li class="list"><a class="list_d" href="#">OneDrive</a></li>
+                        <li class="list"><a class="list_d" href="#">Outlook</a></li>
+                        <li class="list"><a class="list_d" href="#">Skype</a></li>
+                        <li class="list"><a class="list_d" href="#">OneNote</a></li> -->
+                </ul>
+                <ul class="pad_list_2 pad_list_bb">
+                        <a href="#"><p>個人電腦和設備</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">PCs & tablets</a></li>
+                        <li class="list"><a class="list_d" href="#">電腦配件</a></li> -->
+                </ul>
+                <ul class="pad_list_3 pad_list_bb">
+                        <a href="#"><p>娛樂</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">Xbox 與遊戲</a></li>
+                        <li class="list"><a class="list_d" href="#">遊戲</a></li>
+                        <li class="list"><a class="list_d" href="#">Windows 遊戲</a></li> -->
+                </ul>
+                <ul class="pad_list_4 pad_list_bb">
+                        <a href="#"><p>商務適用</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">Microsoft Azure</a></li>
+                        <li class="list"><a class="list_d" href="#">Microsoft Dynamics 365</a></li>
+                        <li class="list"><a class="list_d" href="#">Microsoft 365</a></li>
+                        <li class="list"><a class="list_d" href="#">Microsoft Industry</a></li>
+                        <li class="list"><a class="list_d" href="#">資料平台</a></li> -->
+                </ul>
+                <ul class="pad_list_5 pad_list_bb">
+                        <a href="#"><p>Developer & IT</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">.NET</a></li>
+                        <li class="list"><a class="list_d" href="#">Visual Studio</a></li>
+                        <li class="list"><a class="list_d" href="#">Windows Server</a></li>
+                        <li class="list"><a class="list_d" href="#">開發 Windows 應用程式</a></li>
+                        <li class="list"><a class="list_d" href="#">文件</a></li> -->
+                </ul>
+                <ul class="pad_list_6 pad_list_bb">
+                        <a href="#"><p>其他</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">Microsoft Store</a></li>
+                        <li class="list"><a class="list_d" href="#">Microsoft Rewards</a></li>
+                        <li class="list"><a class="list_d" href="#">免費下載與安全性</a></li>
+                        <li class="list"><a class="list_d" href="#">教育</a></li>
+                        <li class="list"><a class="list_d" href="#">禮品卡</a></li> -->
+                </ul>
+            </ul>
         </div>
         <div class="pad_search">
             </a><i id="pad_search" class="fas fa-search fa-flip-horizontal fa-3x"></i>
@@ -145,20 +192,28 @@
         var line1 = document.querySelector('#line1')
         var line2 = document.querySelector('#line2')
         var line3 = document.querySelector('#line3')
+        var pad_list_oo = document.querySelector('.pad_list_allco')
+        var pad_list_bb = document.querySelector('.pad_list_bb')
 
+        pad_list_bb.addEventListener('mousedown',listbbtouch)
         pad_menu.addEventListener('click', menutouch)
+
 
         function menutouch() {
             line1.classList.toggle('line1')
             line2.classList.toggle('line2')
             line3.classList.toggle('line3')
+            pad_list_oo.classList.toggle('pad_list_allco')
         }
+        function listbbtouch() {
+            pad_list_bb.classList.toggle('list_bb')
+        }
+
 
     </script>
 
+    <!-- /pc/ ----------------------------------------------------       -->
     <nav class="box_mastr">
-        <!-- <div id="img_top" class='img_top'> -->
-        <!-- Swiper -->
         <div id="img_top" class="swiper-container img_top">
             <div class="swiper-wrapper">
                 <div class="swiper-slide imgin" style="background-image:url(img/RE2OdIC.jpg)"></div>

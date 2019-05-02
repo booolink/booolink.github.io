@@ -117,8 +117,7 @@ img{
 .list_d{
     font-size: 10pt;    
 }
-.list:hover a{
-   
+.list:hover a{   
     border-bottom: 1px solid;     
 }
 
@@ -145,7 +144,9 @@ img{
     float: left;
 }
 /********************  V pad modeV  *********************/
-
+.pad_list_allco{
+    display: none;
+}
 .pad_nav{
     width: 90%;
     margin: auto;
@@ -429,7 +430,26 @@ h2{
         width: 90%;
     }
     .pad_menu{
+        position: relative;
         margin-left: 10px;
+        
+    }
+    .pad_list_all{
+        width: 1024px;
+        margin-top: 50px;       
+        position: absolute;
+        z-index: 5;       
+        left: -150%;
+        background-color: rgb(209, 209, 209);
+    }
+    .list_bb{
+        border: 1px ;
+        border-style: outset;
+    }
+
+    .pad_list_ulbb,.pad_list_bb{
+        margin: 15px;
+        display: block;
     }
     .pad_search{
         margin-left: 10px;
