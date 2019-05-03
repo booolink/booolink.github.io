@@ -1,42 +1,50 @@
 *{
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 body{
     margin: 0;
     padding: 0;
     height: 5622px;
-    background-image: url(../img/bgc1.jpg);
+    background-image: url(../img/bgc1-1-02.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-attachment: fixed;
 }
-/* --------------------------------------------------- */
+/* ---------------------^環境設定^------------------------------ */
+
+/* .chin_2{
+    background-color: blueviolet;
+} */
 .chin_1{
-    width: 1140px;    
-    /* background-color: rgb(187, 73, 73); */
+    width: 1140px;
+    height: 887px;
     position: relative;
     margin: auto;
+    /* background-color: blueviolet; */
 }
 .vip{
     width: 742px;
     height: 150px;
+    border-radius:0.4rem; 
     background-image: url(../img/baneer.jpg);
     background-repeat: no-repeat;    
     margin-left: 360px;
     position: absolute;
-    z-index: 1;
+    z-index: 999;
     opacity: 0.8;
 }
 .ticket{
     width: 658px;
     height: 666px;
+    border-radius:0.4rem;
     background-image: url(../img/107-官網票價.jpg);
     background-repeat: no-repeat;
     position: absolute;
     margin-left: 205px;
-    opacity: 0.7;
+    opacity: 0.8;
     top: 120px;
     margin-bottom: 50px;
 }
@@ -57,21 +65,22 @@ a{
 /* --------------------menu--------------------------- */
 .menu{
     width: 205px;
+    border-radius:0.4rem;
     background-color: rgba(133, 133, 250, 0.247);
     position: fixed;
     top: 170px;
     z-index: 5;
 }
 .title_left{
-    width: 25px;
-    font-family:"華康粗黑體(P)" ;
+    width: 30px;
+    font-family:"微軟正黑體" ;
     font-size: 40pt;
-    margin-top: 43px;
+    margin-top: 30px;
     margin-left:25px;    
     float: left; 
 }
 .title{
-    font-family:"華康粗黑體(P)" ;
+    font-family:"微軟正黑體" ;
     font-size: 28pt;
     color: rgb(255, 255, 255);
     margin-top: 10px;
@@ -81,7 +90,6 @@ a{
     width: 100px;
     margin-left: 100px;
     margin-top: 48px;
-    /* background-color: aqua; */
 }
 .link{
     display: block;
@@ -96,6 +104,7 @@ a{
 .facebook{
     width: 217px;
     height: 80px;
+    border-radius:0.4rem;
     background-image: url(../img/Facebook_Logo.png);
     background-position: center;
     background-size: contain;
@@ -108,6 +117,7 @@ a{
 .halalogo{
     width: 217px;
     height: 80px;
+    border-radius:0.4rem;
     background-image: url(../img/halalogo-04.jpg);
     background-position: center;
     background-size: cover;
@@ -121,16 +131,15 @@ a{
 /* ------------------------- 場次專區 -------------------------- */
 /* ------------------------------------------------------------- */
 .chin_2{
-  width: 800px;
-  position: absolute;
-  top: 850px;
-  left: 205px;
+  width: 1140px;
+  margin: auto;
 }
 .movie{
     width: 207px;
     height: 267px;
     background-color: rgba(0, 255, 255, 0.418);
     border: 2px solid white;
+    margin-left: 205px;
 }
 .movie_img{
     width: 108px;
