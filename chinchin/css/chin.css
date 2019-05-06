@@ -452,6 +452,8 @@ br{
   margin-bottom: 70px;
 }
 .int_img{
+    text-indent:5px;
+    font-size: 12pt;
     float: left;
     width: 108px;
     height: 160px;
@@ -481,37 +483,189 @@ br{
     /* background-color: blueviolet; */
 }
 /*--------------------以上 電影介紹 總體設定-----------------------------*/
-#int_txt1{
+/* #int_txt1{
     text-indent:5px;
-    font-size: 10pt;
-}
+    font-size: 12pt;
+} */
 #int_img_a1{
     background-image: url(../img/Hellboy.jpg);
 }
 /************二 二 二 二***************/
-#int_txt2{
+/* #int_txt2{
     text-indent:5px;
-    font-size: 10pt;
-}
+    font-size: 12pt;
+} */
 #int_img_a2{
     background-image: url(../img/Pet\ Sematary.JPG);
 }
 /************三 三 三 三***************/
-#int_txt3{
+/* #int_txt3{
     text-indent:5px;
-    font-size: 10pt;
-}
+    font-size: 12pt;
+} */
 #int_img_a3{
     background-image: url(../img/Llorona.jpg);
 }
 /************四 四 四 四***************/
-#int_txt4{
+/* #int_txt4{
     text-indent:5px;
-    font-size: 10pt;
-}
+    font-size: 12pt;
+} */
 #int_img_a4{
     background-image: url(../img/bgc1.jpg);
 }
+/************月 月 月 月***************/
+/************五 五 五 五***************/
+/************月 月 月 月***************/
+
+/* #int_txtm1{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m1{
+    background-image: url(../img/Missing\ Link.jpg);
+}
+/************二 二 二 二***************/
+/* #int_txtm2{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m2{
+    background-image: url(../img/Hustle.JPG);
+}
+/************三 三 三 三***************/
+/* #int_txtm3{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m3{
+    background-image: url(../img/Pikachu.jpg);
+}
+/************四 四 四 四***************/
+/* #int_txtm4{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m4{
+    background-image: url(../img/Parabellum.jpg);
+}
+/************五 五 五 五***************/
+/* #int_txtm5{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m5{
+    background-image: url(../img/Dog.jpg);
+}
+/************六 六 六 六***************/
+/* #int_txtm6{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m6{
+    background-image: url(../img/Bad\ Boys\ Symphony.jpg);
+}
+/************七 七 七 七***************/
+/* #int_txtm7{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m7{
+    background-image: url(../img/UglyDolls.jpg);
+}
+/************八 八 八 八***************/
+/* #int_txtm8{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m8{
+    background-image: url(../img/Aladdin.jpg);
+}
+/************九 九 九 九***************/
+/* #int_txtm9{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m9{
+    background-image: url(../img/City\ Hunter.jpg);
+}
+/************十 十 十 十***************/
+/* #int_txtm10{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_m10{
+    background-image: url(../img/Godzilla2.jpg);
+}
+/************月 月 月 月***************/
+/************六 六 六 六***************/
+/************月 月 月 月***************/
+/* #int_txtj1{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_j1{
+    background-image: url(../img/Dark\ Phoenix.jpg);
+}
+/************二 二 二 二***************/
+/* #int_txtj2{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_j2{
+    background-image: url(../img/Pets\ 2.JPG);
+}
+/************三 三 三 三***************/
+/* #int_txtj3{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_j3{
+    background-image: url(../img/International.jpg);
+}
+/************四 四 四 四***************/
+/* #int_txtj4{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_j4{
+    background-image: url(../img/Rocketman.JPG);
+}
+/************五 五 五 五***************/
+/* #int_txtj5{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_j5{
+    background-image: url(../img/Dog.jpg);
+}
+/************六 六 六 六***************/
+/* #int_txtj6{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_j6{
+    background-image: url(../img/Anna.jpg);
+}
+/************七 七 七 七***************/
+/* #int_txtj7{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_j7{
+    background-image: url(../img/Yesterday.jpg);
+}
+/************八 八 八 八***************/
+/* #int_txtj8{
+    text-indent:5px;
+    font-size: 12pt;
+} */
+#int_img_j8{
+    background-image: url(../img/Annabelle.jpg);
+}
+
+
+
 /*--------------------以上 電影介紹 個別設定-----------------------------*/
 
 
