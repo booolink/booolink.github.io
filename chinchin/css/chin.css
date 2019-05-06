@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    /* outline: 1px solid red;   */
 }
 body{
     margin: 0;
@@ -10,7 +10,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background-attachment: fixed;
 }
 /* ---------------------^環境設定^------------------------------ */
@@ -59,8 +59,12 @@ p{
     padding: 0;
     display: block;
 }
-a{
+a{  
     text-decoration: none;
+}
+br{
+    margin: 0;
+    padding: 0;
 }
 /* --------------------menu--------------------------- */
 .menu{
@@ -69,7 +73,7 @@ a{
     background-color: rgba(133, 133, 250, 0.247);
     position: fixed;
     top: 170px;
-    z-index: 5;
+    z-index: 999;
 }
 .title_left{
     width: 30px;
@@ -109,9 +113,9 @@ a{
     background-position: center;
     background-size: contain;
     position: fixed;
-    right: 190px;
+    right: 100px;
     top: 487px;
-    z-index: 5;
+    z-index: 999;
 }
 /* --------------------halalogo--------------------------- */
 .halalogo{
@@ -123,55 +127,471 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
-    right: 190px;
+    right: 100px;
     top: 587px;
-    z-index: 5;
+    z-index: 999;
 }
 /* ------------------------------------------------------------- */
 /* ------------------------- 場次專區 -------------------------- */
 /* ------------------------------------------------------------- */
 .chin_2{
   width: 1140px;
+  height: 871.6px;
   margin: auto;
+  display: flex;
+  /* background-color: rgb(38, 0, 255); */
+  /* flex-direction:row; */
+  align-content:flex-start;
+  flex-wrap:wrap;
 }
-.movie{
-    width: 207px;
-    height: 267px;
-    background-color: rgba(0, 255, 255, 0.418);
-    border: 2px solid white;
+#movie1,#movie5,#movie9{
     margin-left: 205px;
 }
-.movie_img{
-    width: 108px;
-    height: 160px;
+.movie{
+    width: 200px;
+    height: 242.2px;
+    background-color: rgba(32, 128, 128, 0.5);
+    border: 3px ridge rgba(0, 0, 0, 0.842);
+    margin:0px 7px 15px 0px;
+    border-radius: 4px; 
 }
 .movie_text{
+    font-family: '微軟正黑體';
     width: 100%;
-    height: 36px;
+    height: 37.1px;
     background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1.5px;
 }
 .text{
     float: left;
-    text-indent:15px;
+    /* text-indent:15px; */
+    text-align: center;
     color: white;
+    margin: auto;
 }
 .Grading_all{
     width: 24px;
     height: 24px;
     background-size: contain;
     float: left;
-    margin: 7px 30px 5px 5px;
+    margin: 5px 10px 5px 5px;
+}
+.movebox_1{
+    width: 100%;
+    height: 160px;
+}
+.movie_img{
+    float: left;
 }
 .img_all{
     width: 108px;
     height: 160px;
     background-size: cover;
 }
-/* -------------------以上總體設定------------------------------------------ */
-
-.Grading1{
-    background-image: url(../img/6plus.jpg);
+.movie_time{
+    font-family: '微軟正黑體';
+    font-size: 10pt;
+    font-weight: 900;
+    color: white;
+    line-height: 16pt;
+    text-align: center;
+    margin: auto;
 }
+
+.movebox_2{
+    width: 100%;
+    height: 40px;
+}
+.leftdown{
+    float: left;
+}
+.movie_living{
+    width: 108px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.movie_int{
+    width: 108px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.rightdown{
+    float: right;
+}
+
+.movie_time2{
+    font-family: '微軟正黑體';
+    font-size: 11pt;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+/*------------------以上總體設定------------------------------------------ */
+/*-- 分級ico --*/
+#movie_test1{
+    font-size: 9pt;    
+}
+.Grading1{
+    background-image: url(../img/6plus.png);
+}
+/*-- 電影海報 --*/
 .img1{
     background-image: url(../img/bgc1.jpg);    
+}
+/*-- 電影廳 --*/
+.movie_living1{
+    background-image: url(../img/mr01.jpg);
+}
+.movie_int{
+    background-image: url(../img/mg001.jpg);
+}
+/************二 二 二 二***************/
+#movie_test2{
+    font-size: 9pt;
+}
+/*-- 分級ico --*/
+.Grading2{
+    background-image: url(../img/6plus.png);
+}
+/*-- 電影海報 --*/
+.img2{
+    background-image: url(../img/bgc1.jpg);    
+}
+/*-- 電影廳 --*/
+.movie_living2{
+    background-image: url(../img/mr02.jpg);
+}
+/************三 三 三 三***************/
+
+#movie_test3{
+    font-size: 7pt;
+    margin-top: 3px;
+}
+.Grading3{
+    background-image: url(../img/15plus.png);
+}
+.img3{
+    background-image: url(../img/Hellboy.jpg);    
+}
+.movie_living3{
+    background-image: url(../img/mr03.jpg);
+}
+/*************四 四 四 四**************/
+#movie_test4{
+    font-size: 9pt;    
+}
+.Grading4{
+    background-image: url(../img/6plus.png);
+}
+.img4{
+    background-image: url(../img/bgc1.jpg);    
+}
+.movie_living4{
+    background-image: url(../img/mr03.jpg);
+}
+/*************五 五 五 五**************/
+#movie_test5{
+    font-size: 9pt;    
+}
+.Grading5{
+    background-image: url(../img/6plus.png);
+}
+.img5{
+    background-image: url(../img/bgc1.jpg);    
+}
+.movie_living5{
+    background-image: url(../img/mr05.jpg);
+}
+/************六 六 六 六***************/
+#movie_test6{
+    font-size: 9pt;
+    margin-left: 30px;  
+}
+.Grading6{
+    background-image: url(../img/15plus.png);
+}
+.img6{
+    background-image: url(../img/Pet\ Sematary.JPG);    
+}
+.movie_living6{
+    background-image: url(../img/mr06.jpg);
+}
+/************七 七 七 七***************/
+#movie_test7{
+    font-size: 9pt;    
+}
+.Grading7{
+    background-image: url(../img/6plus.png);
+}
+.img7{
+    background-image: url(../img/bgc1.jpg);    
+}
+.movie_living7{
+    background-image: url(../img/mr06.jpg);
+}
+/************八 八 八 八***************/
+#movie_test8{
+    font-size: 9pt;    
+}
+.Grading8{
+    background-image: url(../img/15plus.png);
+}
+.img8{
+    background-image: url(../img/Llorona.jpg);    
+}
+.movie_living8{
+    background-image: url(../img/mr07.jpg);
+}
+/************九 九 九 九**************/
+#movie_test9{
+    font-size: 9pt;
+    margin-left: 30px;
+}
+.Grading9{
+    background-image: url(../img/15plus.png);
+}
+.img9{
+    background-image: url(../img/Pet\ Sematary.JPG);    
+}
+.movie_living9{
+    background-image: url(../img/mr07.jpg);
+}
+/************十 十 十 十**************/
+#movie_test10{
+    font-size: 9pt;    
+}
+.Grading10{
+    background-image: url(../img/0plus.png);
+}
+.img10{
+    background-image: url(../img/Missing\ Link.jpg);    
+}
+.movie_living10{
+    background-image: url(../img/mr08.jpg);
+}
+/************拾一 拾一**************/
+#movie_test11{
+    font-size: 9pt;    
+}
+.Grading11{
+    background-image: url(../img/0plus.png);
+}
+.img11{
+    background-image: url(../img/Missing\ Link.jpg);    
+}
+.movie_living11{
+    background-image: url(../img/mr08.jpg);
+}
+/************拾二 拾二**************/
+#movie_test12{
+    font-size: 9pt;    
+}
+.Grading12{
+    background-image: url(../img/6plus.jpg);
+}
+.img12{
+    background-image: url(../img/bgc1.jpg);    
+}
+.movie_living12{
+    background-image: url(../img/mr01.jpg);
+}
+/***************************************/
+
+
+
+/* ------------------------------------------------------------- */
+/* ------------------------- 活動專區 -------------------------- */
+/* ------------------------------------------------------------- */
+.chin_3{
+    width: 1140px;
+    height: 600px;
+    margin: auto;
+    /* background-color: aqua; */
+}
+/* ------------------------------------------------------------- */
+/* ------------------------- 電影介紹 -------------------------- */
+/* ------------------------------------------------------------- */
+.chin_4{
+    width: 1140px;
+    height: 970px;
+    margin: auto;
+    /* background-color: rgb(0, 4, 255); */
+}
+.chin4_left{
+    width: 30px;
+    font-family:"微軟正黑體" ;
+    font-size: 40pt;
+    margin-top: 0px;
+    margin-left:120px;    
+    float: left; 
+    text-shadow: -2px -2px white, 1px 1px #333;
+}
+.introduction{
+    margin-left: 205px;
+    box-shadow: 5px 3px 8px 5px black;
+    margin-bottom: 30px;
+}
+.month{
+    width: 90px;
+    height: 30px;
+    font-family: '微軟正黑體';
+    font-size: 16pt;
+    font-weight:900; 
+    display:inline-block;
+    text-align: center;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.644);
+    margin: 8px 0px 8px 8px;
+    /* box-shadow: 2px 0px 2px 8px rgba(0, 0, 0, 0.63)
+               ,-2px 0px 2px 8px rgba(0, 0, 0, 0.63); */
+}
+.swiper-slide{
+  margin-bottom: 70px;
+}
+.int_img{
+    float: left;
+    width: 108px;
+    height: 160px;
+    margin-left: 38px;
+    background-size: cover;
+}
+.int_txt{
+    float: center;
+    font-family: '微軟正黑體';
+    font-weight: 900;
+    text-align: center; 
+    text-shadow:  0.5px 0.5px rgb(255, 255, 255), -1px -1px rgba(236, 87, 87, 0.658);
+}
+#April{
+    width: 70%;
+    height: 270px;
+    /* background-color: blueviolet; */
+}
+#May{
+    width: 70%;
+    height: 270px;
+    /* background-color: blueviolet; */
+}
+#June{
+    width: 70%;
+    height: 270px;
+    /* background-color: blueviolet; */
+}
+/*--------------------以上 電影介紹 總體設定-----------------------------*/
+#int_txt1{
+    text-indent:5px;
+    font-size: 10pt;
+}
+#int_img_a1{
+    background-image: url(../img/Hellboy.jpg);
+}
+/************二 二 二 二***************/
+#int_txt2{
+    text-indent:5px;
+    font-size: 10pt;
+}
+#int_img_a2{
+    background-image: url(../img/Pet\ Sematary.JPG);
+}
+/************三 三 三 三***************/
+#int_txt3{
+    text-indent:5px;
+    font-size: 10pt;
+}
+#int_img_a3{
+    background-image: url(../img/Llorona.jpg);
+}
+/************四 四 四 四***************/
+#int_txt4{
+    text-indent:5px;
+    font-size: 10pt;
+}
+#int_img_a4{
+    background-image: url(../img/bgc1.jpg);
+}
+/*--------------------以上 電影介紹 個別設定-----------------------------*/
+
+
+/* ------------------------------------------------------------- */
+/* ------------------------- 關於親親 -------------------------- */
+/* ------------------------------------------------------------- */
+.chin_5{
+    width: 1140px;
+    height: 970px;
+    margin: auto;
+    position: relative;
+    /* background-color: rgb(0, 4, 255); */
+}
+.chin5_box1{
+    width: 3240px;
+    height: 637px;
+    position: absolute;
+    z-index: -1;
+    right: -1140px;
+    background-color: rgba(230, 230, 230, 0.199);
+}
+.chin5_right{
+    width: 30px;
+    font-family:"微軟正黑體" ;
+    font-size: 40pt;
+    font-weight: 900;
+    float: right;
+    margin-right: 180px;
+    margin-top: 90px;
+    color: #333;
+    text-shadow:-2px -2px rgb(255, 255, 255);
+}
+.chin5_txtbox1{
+    width: 700px;
+    height: 502px;
+    border-radius:2px; 
+    background-color: rgb(255, 29, 37,0.58);
+    margin-top: 90px;
+    margin-left: 1166px;
+}
+.chin5_txt{
+    font-family:"微軟正黑體" ;
+    font-size: 26pt;
+    text-align: left;
+    text-indent:80px;
+    color: rgb(185, 185, 185);
+    text-shadow:1px 1px #333;
+    line-height: 43px;
+}
+.chin5_txtbox{
+    width: 580px;
+    height: 370px;
+    border-radius:2px; 
+    background-color: rgba(153, 153, 153, 0.822);
+    position: absolute;
+    right: 100px;
+    top: 500px;
+    
+}
+.chin5_title{
+    font-family:"微軟正黑體" ;
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+    text-shadow:1px 1px #333;
+}
+.chin5_text{
+    font-family:"微軟正黑體" ;
+    font-size: 12pt;
+    text-align: left;
+    color: rgb(219, 219, 219);
+    text-shadow:1px 1px #333;
+    line-height: 23px;
+}
+/* ------------------------------------------------------------- */
+/* ------------------------- 交通指南 -------------------------- */
+/* ------------------------------------------------------------- */
+.chin_6{
+    width: 1140px;
+    height: 970px;
+    margin: auto;
+    position: relative;
+    background-color: rgb(0, 4, 255);
 }
