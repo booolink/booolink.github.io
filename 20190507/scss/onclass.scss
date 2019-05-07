@@ -1,0 +1,17 @@
+@import '_var.scss';
+
+.test{
+    width: $main-width; 
+    height: 200px;
+    color: $main-color;
+}
+.box{
+    color: $main-color;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+.box { @include transform(rotate(30deg)); }

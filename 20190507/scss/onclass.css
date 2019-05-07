@@ -1,0 +1,15 @@
+.test {
+  width: 500px;
+  height: 200px;
+  color: #ff0000;
+}
+
+.box {
+  color: #ff0000;
+}
+
+.box {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+/*# sourceMappingURL=onclass.css.map */

@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    /* outline: 1px solid red;   */
+    outline: 1px solid red;  
 }
 body{
     margin: 0;
@@ -70,7 +70,7 @@ br{
 .menu{
     width: 205px;
     border-radius:0.4rem;
-    background-color: rgba(133, 133, 250, 0.247);
+    /* background-color: rgba(133, 133, 250, 0.247); */
     position: fixed;
     top: 170px;
     z-index: 999;
@@ -92,17 +92,31 @@ br{
 }
 .link_all{
     width: 100px;
-    margin-left: 100px;
+    margin-left: 80px;
     margin-top: 48px;
 }
 .link{
+    width: 120px;
+    height: 30px;
+    font-weight: 900;
+    text-align: center;
     display: block;
     margin: 10px 10px 30px 10px;
 }
 .acolor{
     font-family: "微軟正黑體" ;
-    color: white;
-    font-size: 14pt;
+    color:rgba(247, 112, 63, 0.37);
+    font-size: 16pt;
+    text-shadow: 1px 1px #333;
+    display: inline-block;
+}
+.link:hover a{
+    font-size: 18pt;
+    background-color:#666;
+  
+}
+.link:hover link{
+    
 }
 /* --------------------facebook--------------------------- */
 .facebook{
@@ -135,34 +149,34 @@ br{
 /* ------------------------- 場次專區 -------------------------- */
 /* ------------------------------------------------------------- */
 .chin_2{
-  width: 1140px;
-  height: 871.6px;
-  margin: auto;
+  width: 934px;
+  height: 827px;
+  float: right;
+  margin-right: 381px;
   display: flex;
   /* background-color: rgb(38, 0, 255); */
   /* flex-direction:row; */
   align-content:flex-start;
   flex-wrap:wrap;
-}
-#movie1,#movie5,#movie9{
-    margin-left: 205px;
+  justify-content: flex-start;
 }
 .movie{
-    width: 200px;
+    width: calc(25% - 7px);
     height: 242.2px;
     background-color: rgba(32, 128, 128, 0.5);
-    border: 3px ridge rgba(0, 0, 0, 0.842);
-    margin:0px 7px 15px 0px;
-    border-radius: 4px; 
+    border: 3px ridge rgba(71, 71, 71, 0.842);
+    border-radius: 4px;
+    margin: 0px 7px 5px 0px;
 }
 .movie_text{
-    font-family: '微軟正黑體';
+    
     width: 100%;
     height: 37.1px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(24, 23, 23, 0.637);
     border-radius: 1.5px;
 }
 .text{
+    width: calc(100% - 24px - 15px);
     float: left;
     /* text-indent:15px; */
     text-align: center;
@@ -218,7 +232,7 @@ br{
     background-size: contain;
 }
 .rightdown{
-    float: right;
+    float: center;
 }
 
 .movie_time2{
@@ -232,6 +246,7 @@ br{
 /*------------------以上總體設定------------------------------------------ */
 /*-- 分級ico --*/
 #movie_test1{
+    font-family: '微軟正黑體';
     font-size: 9pt;    
 }
 .Grading1{
@@ -250,6 +265,7 @@ br{
 }
 /************二 二 二 二***************/
 #movie_test2{
+    font-family: '微軟正黑體';
     font-size: 9pt;
 }
 /*-- 分級ico --*/
@@ -267,8 +283,7 @@ br{
 /************三 三 三 三***************/
 
 #movie_test3{
-    font-size: 7pt;
-    margin-top: 3px;
+    font-size: 9pt;
 }
 .Grading3{
     background-image: url(../img/15plus.png);
@@ -281,6 +296,7 @@ br{
 }
 /*************四 四 四 四**************/
 #movie_test4{
+    font-family: '微軟正黑體';
     font-size: 9pt;    
 }
 .Grading4{
@@ -294,6 +310,7 @@ br{
 }
 /*************五 五 五 五**************/
 #movie_test5{
+    font-family: '微軟正黑體';
     font-size: 9pt;    
 }
 .Grading5{
@@ -307,8 +324,8 @@ br{
 }
 /************六 六 六 六***************/
 #movie_test6{
+    font-family: '微軟正黑體';
     font-size: 9pt;
-    margin-left: 30px;  
 }
 .Grading6{
     background-image: url(../img/15plus.png);
@@ -321,6 +338,7 @@ br{
 }
 /************七 七 七 七***************/
 #movie_test7{
+    font-family: '微軟正黑體';
     font-size: 9pt;    
 }
 .Grading7{
@@ -334,6 +352,7 @@ br{
 }
 /************八 八 八 八***************/
 #movie_test8{
+    font-family: '微軟正黑體';
     font-size: 9pt;    
 }
 .Grading8{
@@ -347,8 +366,8 @@ br{
 }
 /************九 九 九 九**************/
 #movie_test9{
+    font-family: '微軟正黑體';
     font-size: 9pt;
-    margin-left: 30px;
 }
 .Grading9{
     background-image: url(../img/15plus.png);
@@ -361,6 +380,7 @@ br{
 }
 /************十 十 十 十**************/
 #movie_test10{
+    font-family: '微軟正黑體';
     font-size: 9pt;    
 }
 .Grading10{
@@ -374,6 +394,7 @@ br{
 }
 /************拾一 拾一**************/
 #movie_test11{
+    font-family: '微軟正黑體';
     font-size: 9pt;    
 }
 .Grading11{
@@ -386,7 +407,8 @@ br{
     background-image: url(../img/mr08.jpg);
 }
 /************拾二 拾二**************/
-#movie_test12{
+/* #movie_test12{
+    font-family: '微軟正黑體';
     font-size: 9pt;    
 }
 .Grading12{
@@ -397,7 +419,7 @@ br{
 }
 .movie_living12{
     background-image: url(../img/mr01.jpg);
-}
+} */
 /***************************************/
 
 
@@ -410,6 +432,7 @@ br{
     height: 600px;
     margin: auto;
     /* background-color: aqua; */
+    clear: both;
 }
 /* ------------------------------------------------------------- */
 /* ------------------------- 電影介紹 -------------------------- */
@@ -747,5 +770,5 @@ br{
     height: 970px;
     margin: auto;
     position: relative;
-    /* background-color: rgb(0, 4, 255); */
+    background-color: rgb(0, 4, 255);
 }

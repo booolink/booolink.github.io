@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAA;EACD,KAAK,ECFI,KAAK;EDGd,MAAM,EAAE,KAAK;EACb,KAAK,ECLK,OAAO;CDMpB;;AACD,AAAA,IAAI,CAAA;EACA,KAAK,ECRK,OAAO;CDSpB;;AAOD,AAAA,IAAI,CAAC;EAJH,iBAAiB,EAIO,aAAa;EAHrC,aAAa,EAGW,aAAa;EAFrC,SAAS,EAEe,aAAa;CAAK",
+    "sources": [
+        "onclass.scss",
+        "_var.scss"
+    ],
+    "names": [],
+    "file": "onclass.css"
+}

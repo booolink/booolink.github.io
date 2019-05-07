@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,KAAK,CAAA;EACD,KAAK,EAHK,OAAO;CAIpB",
+    "sources": [
+        "onclassCSS.scss",
+        "_var.scss"
+    ],
+    "names": [],
+    "file": "onclassCSS.css"
+}
