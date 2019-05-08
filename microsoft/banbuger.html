@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .hanbuger {
+            width: 100px;
+            height: 100px;
+            /* background-color: aqua; */
+            position: relative;
+        }
+
+        .han {
+            width: 100%;
+            border-top: 4px solid black;
+            position: absolute;
+        }
+
+        #han1 {
+            top: 0%;          
+        }
+
+        #han2 {
+            top: calc(50% - 2px);
+            
+        }
+
+        #han3 {
+            bottom: 0px;
+         
+        }
+        .han1 {            
+            animation: line1_ani 2S;
+            animation-iteration-count:1;
+            animation-fill-mode: forwards;
+        }
+
+        .han2 {            
+            animation: line2_ani 2S;
+            animation-iteration-count:1;
+            animation-fill-mode: forwards;
+        }
+
+        .han3 {           
+            animation: line3_ani 2S;
+            animation-iteration-count:1;
+            animation-fill-mode: forwards;
+        }
+
+
+        @keyframes line1_ani {           
+            60% {
+                top: calc(50% - 2px);
+                transform: rotate(0deg);
+            }
+            100% {
+                top: calc(50% - 2px);
+                transform: rotate(-225deg);
+            }
+        }
+
+        @keyframes line2_ani {           
+
+            50% {
+                top:calc(50% - 2px);
+                opacity: 1;
+            }
+            60% {
+                top:calc(50% - 2px);
+                opacity: 0;
+            }
+            100% {
+                top:calc(50% - 2px);
+                opacity: 0;
+            }
+        }
+        @keyframes line3_ani { 
+                    
+            60% {
+                bottom: calc(50% - 2px);
+                transform: rotate(0deg);
+            }
+            100% {
+                bottom: calc(50% - 2px);
+                transform: rotate(225deg);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="" class="hanbuger">
+        <div id="han1" class="han "></div>
+        <div id="han2" class="han "></div>
+        <div id="han3" class="han "></div>
+    </div>
+
+    <script>
+    var hanbuger=document.querySelector('.hanbuger')
+    var han1=document.querySelector('#han1')
+    var han2=document.querySelector('#han2')
+    var han3=document.querySelector('#han3')
+
+    hanbuger.addEventListener('click',hanhandler)
+
+    function hanhandler(){
+      han1.classList.toggle('han1')
+      han2.classList.toggle('han2')
+      han3.classList.toggle('han3')
+    }
+    </script>
+
+</body>
+
+</html>

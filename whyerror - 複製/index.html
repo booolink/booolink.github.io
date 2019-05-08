@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/micsoftnew.css">
+</head>
+
+<body>
+    <!-- /pc/ ----------------------------------------------------       -->
+    <nav class="boxtop">
+        <div id="" class="nav_all">
+            <div id="logo" class="img"><img src="img/RE1Mu3b.png" alt=""></div>
+            <div id="menu_C">
+                <ul class='menu'>
+                    <li class="tapon tapon1"><a href="#">
+                            <p class="bs">Office</p>
+                        </a></li>
+                    <li class="tapon tapon1"><a href="#">
+                            <p class="bs">Windows</p>
+                        </a></li>
+                    <li class="tapon tapon1"><a href="#">
+                            <p class="bs">Surface</p>
+                        </a></li>
+                    <li class="tapon tapon1"><a href="#">
+                            <p class="bs">Xbox</p>
+                        </a></li>
+                    <li class="tapon tapon1"><a href="#">
+                            <p class="bs">支援</p>
+                        </a></li>
+                </ul>
+            </div>
+            <ul id="menu_R" class="menu">
+                <li id="mic" class="tapon tapon1"><a href="#">
+                        <p class="bs">所有Microsoft</p>
+                    </a>
+                    <ul class="list_all">
+                        <ul class="list_1 list_bb">
+                            <p>軟體</p>
+                            <li class="list"><a class="list_d" href="#">Windows 應用程式</a></li>
+                            <li class="list"><a class="list_d" href="#">OneDrive</a></li>
+                            <li class="list"><a class="list_d" href="#">Outlook</a></li>
+                            <li class="list"><a class="list_d" href="#">Skype</a></li>
+                            <li class="list"><a class="list_d" href="#">OneNote</a></li>
+                        </ul>
+                        <ul class="list_2 list_bb">
+                            <p>個人電腦和設備</p>
+                            <li class="list"><a class="list_d" href="#">PCs & tablets</a></li>
+                            <li class="list"><a class="list_d" href="#">電腦配件</a></li>
+                        </ul>
+                        <ul class="list_3 list_bb">
+                            <p>娛樂</p>
+                            <li class="list"><a class="list_d" href="#">Xbox 與遊戲</a></li>
+                            <li class="list"><a class="list_d" href="#">遊戲</a></li>
+                            <li class="list"><a class="list_d" href="#">Windows 遊戲</a></li>
+                        </ul>
+                        <ul class="list_4 list_bb">
+                            <p>商務適用</p>
+                            <li class="list"><a class="list_d" href="#">Microsoft Azure</a></li>
+                            <li class="list"><a class="list_d" href="#">Microsoft Dynamics 365</a></li>
+                            <li class="list"><a class="list_d" href="#">Microsoft 365</a></li>
+                            <li class="list"><a class="list_d" href="#">Microsoft Industry</a></li>
+                            <li class="list"><a class="list_d" href="#">資料平台</a></li>
+                        </ul>
+                        <ul class="list_5 list_bb">
+                            <p>Developer & IT</p>
+                            <li class="list"><a class="list_d" href="#">.NET</a></li>
+                            <li class="list"><a class="list_d" href="#">Visual Studio</a></li>
+                            <li class="list"><a class="list_d" href="#">Windows Server</a></li>
+                            <li class="list"><a class="list_d" href="#">開發 Windows 應用程式</a></li>
+                            <li class="list"><a class="list_d" href="#">文件</a></li>
+                        </ul>
+                        <ul class="list_6 list_bb">
+                            <p>其他</p>
+                            <li class="list"><a class="list_d" href="#">Microsoft Store</a></li>
+                            <li class="list"><a class="list_d" href="#">Microsoft Rewards</a></li>
+                            <li class="list"><a class="list_d" href="#">免費下載與安全性</a></li>
+                            <li class="list"><a class="list_d" href="#">教育</a></li>
+                            <li class="list"><a class="list_d" href="#">禮品卡</a></li>
+                        </ul>
+                    </ul>
+
+
+
+                    <i id="icon1" class="fas fa-angle-down"></i>
+
+                </li>
+
+                <script>
+                    var butn = document.querySelector('#mic')
+                    var listbb = document.querySelector('.list_all')
+
+                    butn.addEventListener('click', butnhandler)
+
+                    function butnhandler() {
+                        listbb.classList.toggle('listoo')
+                        butn.classList.toggle('listcc')
+                        console.log('listoo')
+                    }
+                </script>
+
+
+                <li class="tapon tapon1 mn1"><a href="#">
+                        <p class="bs">搜尋</p>
+                    </a><i id="icon2" class="fas fa-search fa-flip-horizontal "></i>
+                </li>
+                <li class="tapon tapon1 mn1"><a href="#">
+                        <p class="bs">購物車</p>
+                    </a> <i id="icon3" class="fas fa-shopping-cart fa-1g"></i>
+                </li>
+                <li class="tapon mn1"><a href="#">登入</a></li>
+                <i id="icon4" class="far fa-user-circle fa-2x"></i>
+            </ul>
+        </div>
+    </nav>
+    <!-- /pad/ ------------------------------------------------------------>
+    <nav class="pad_nav">
+        <div class="pad_menu">
+            <div id="line1" class="line"></div>
+            <div id="line2" class="line"></div>
+            <div id="line3" class="line"></div>
+
+            <ul class="pad_list_all pad_list_allco">
+                <ul class="pad_list_1 pad_list_ulbb">
+                    <a href="#"><p>軟體</p></a>  
+                    <!-- <li class="list"><a class="list_d" href="#">Windows 應用程式</a></li>
+                        <li class="list"><a class="list_d" href="#">OneDrive</a></li>
+                        <li class="list"><a class="list_d" href="#">Outlook</a></li>
+                        <li class="list"><a class="list_d" href="#">Skype</a></li>
+                        <li class="list"><a class="list_d" href="#">OneNote</a></li> -->
+                </ul>
+                <ul class="pad_list_2 pad_list_bb">
+                        <a href="#"><p>個人電腦和設備</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">PCs & tablets</a></li>
+                        <li class="list"><a class="list_d" href="#">電腦配件</a></li> -->
+                </ul>
+                <ul class="pad_list_3 pad_list_bb">
+                        <a href="#"><p>娛樂</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">Xbox 與遊戲</a></li>
+                        <li class="list"><a class="list_d" href="#">遊戲</a></li>
+                        <li class="list"><a class="list_d" href="#">Windows 遊戲</a></li> -->
+                </ul>
+                <ul class="pad_list_4 pad_list_bb">
+                        <a href="#"><p>商務適用</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">Microsoft Azure</a></li>
+                        <li class="list"><a class="list_d" href="#">Microsoft Dynamics 365</a></li>
+                        <li class="list"><a class="list_d" href="#">Microsoft 365</a></li>
+                        <li class="list"><a class="list_d" href="#">Microsoft Industry</a></li>
+                        <li class="list"><a class="list_d" href="#">資料平台</a></li> -->
+                </ul>
+                <ul class="pad_list_5 pad_list_bb">
+                        <a href="#"><p>Developer & IT</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">.NET</a></li>
+                        <li class="list"><a class="list_d" href="#">Visual Studio</a></li>
+                        <li class="list"><a class="list_d" href="#">Windows Server</a></li>
+                        <li class="list"><a class="list_d" href="#">開發 Windows 應用程式</a></li>
+                        <li class="list"><a class="list_d" href="#">文件</a></li> -->
+                </ul>
+                <ul class="pad_list_6 pad_list_bb">
+                        <a href="#"><p>其他</p></a>
+                    <!-- <li class="list"><a class="list_d" href="#">Microsoft Store</a></li>
+                        <li class="list"><a class="list_d" href="#">Microsoft Rewards</a></li>
+                        <li class="list"><a class="list_d" href="#">免費下載與安全性</a></li>
+                        <li class="list"><a class="list_d" href="#">教育</a></li>
+                        <li class="list"><a class="list_d" href="#">禮品卡</a></li> -->
+                </ul>
+            </ul>
+        </div>
+        <div class="pad_search">
+            </a><i id="pad_search" class="fas fa-search fa-flip-horizontal fa-3x"></i>
+        </div>
+        <div class="pad_logo">
+            <div id="pad_logo" class="pad_img"><img src="img/RE1Mu3b.png" alt=""></div>
+        </div>
+        <div class="pad_login">
+            <i id="pad_login" class="far fa-user-circle fa-2x"></i>
+        </div>
+        <div class="pad_chiachia">
+            </a> <i id="pad_chiachia" class="fas fa-shopping-cart fa-2x"></i>
+        </div>
+
+    </nav>
+
+    <script>
+        var pad_menu = document.querySelector('.pad_menu')
+        var line1 = document.querySelector('#line1')
+        var line2 = document.querySelector('#line2')
+        var line3 = document.querySelector('#line3')
+        var pad_list_oo = document.querySelector('.pad_list_allco')
+        var pad_list_bb = document.querySelector('.pad_list_bb')
+
+        pad_list_bb.addEventListener('mousedown',listbbtouch)
+        pad_menu.addEventListener('click', menutouch)
+
+
+        function menutouch() {
+            line1.classList.toggle('line1')
+            line2.classList.toggle('line2')
+            line3.classList.toggle('line3')
+            pad_list_oo.classList.toggle('pad_list_allco')
+        }
+        function listbbtouch() {
+            pad_list_bb.classList.toggle('list_bb')
+        }
+
+
+    </script>
+
+    <!-- /pc/ ----------------------------------------------------       -->
+    <nav class="box_mastr">
+        <div id="img_top" class="swiper-container img_top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide imgin" style="background-image:url(img/RE2OdIC.jpg)"></div>
+                <div class="swiper-slide imgin" style="background-image:url(img/RE2FZRD.png)"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white ggg"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </nav>
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+
+    <div id="box_sliver_all1" class="box_sliver_all">
+        <div id="" class="box_sliver">
+
+            <div id="box1" class="box_sli">
+                <div id="box1-1" class="slo"></div>
+                <div id="box1-2" class="slo_text">
+                    <h3>不平凡的生活</h3>
+                    <p>超越傳統的全新 Surface Laptop 2。</p>
+                    <a class="link_1" href="#">立即選購
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="box2" class="box_sli">
+                <div id="box2-1" class="slo"></div>
+                <div id="box2-2" class="slo_text">
+                    <h3>Surface Go</h3>
+                    <p>隨身 型動力。</p>
+                    <br><a class="link_1" href="#">立即選購
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="box3" class="box_sli">
+                <div id="box3-1" class="slo"></div>
+                <div id="box3-2" class="slo_text">
+                    <h3>Xbox One S</h3>
+                    <p>終極遊戲和 4K 娛樂系統。</p>
+                    <br><a class="link_1" href="#">了解更多
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="box4" class="box_sli">
+                <div id="box4-1" class="slo"></div>
+                <div id="box4-2" class="slo_text">
+                    <h3>Windows 10 更新</h3>
+                    <p>10 月更新讓您充分利用每天的時間。</p>
+                    <br><a class="link_1" href="#">了解更多
+                        <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <nav class="box_mastr2">
+        <!-- <div id="img_top" class='img_top'> -->
+        <!-- Swiper -->
+        <div id="img_top1" class="swiper-container img_top1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide imgin" style="background-image:url(img/RW5kpU.jpg)"></div>
+                <div class="swiper-slide imgin" style="background-image:url(img/RE2FZRD.png)"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+
+        </div>
+    </nav>
+
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+    <div id="box_sliver_all2" class="box_sliver_all">
+
+        <div id="" class="box_text">
+            <h2>適用於工作地點</h2>
+        </div>
+
+        <div id="" class="box_sliver">
+
+            <div id="box5" class="box_sli">
+                <div id="box5-1" class="slo2"></div>
+                <div id="box5-2" class="slo_text">
+                    <h3>Windows 10 企業版</h3>
+                    <p>下載 IT 專業人員適用的 90 天免費評估版本。</p>
+                    <br><a class="link_1" href="#">立即下載
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="box6" class="box_sli">
+                <div id="box6-1" class="slo2"></div>
+                <div id="box6-2" class="slo_text">
+                    <h3>商務用 Office 365</h3>
+                    <p>不論您是連線或離線，都可隨處存取您的檔案。</p>
+                    <br><a class="link_1" href="#">立即選購
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="box7" class="box_sli">
+                <div id="box7-1" class="slo2"></div>
+                <div id="box7-2" class="slo_text">
+                    <h3>Microsoft Azure</h3>
+                    <p>現在開始建置 Web App。</p>
+                    <br><a class="link_1" href="#">開啟免費的 AZURE 帳戶
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="box8" class="box_sli">
+                <div id="box8-1" class="slo2"></div>
+                <div id="box7-2" class="slo_text">
+                    <h3>取得 Visual Studio 2019</h3>
+                    <p>下載 Visual Studio 2019，一款提高生產力、現代和創新的 IDE。</p>
+                    <br><a class="link_1" href="#"> 下載 NOW
+                        <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="grud" class="grud">
+            <p>關注 Microsoft</p>
+
+
+        </div>
+        <div id="" class="footer_top">
+
+        </div>
+        <div id="" class="footer_down">
+            <a id="flisthand" href="#">中文(台灣)</a>
+            <ul id="footer_list" class="footer_list">
+                <li><a id="footer_list1" class="flist" href="#">連絡 Microsoft</a></li>
+                <li><a id="footer_list2" class="flist" href="#">隱私權聲明</a></li>
+                <li><a id="footer_list3" class="flist" href="#">使用規定</a></li>
+                <li><a id="footer_list4" class="flist" href="#">商標</a></li>
+                <li><a id="footer_list5" class="flist" href="#">有關我們的廣告訊息</a></li>
+                <li id="flistlast"> © Microsoft 2019 </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>

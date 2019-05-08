@@ -1,0 +1,570 @@
+*{
+    box-sizing: border-box;
+}
+
+body,#img_top,h3{
+    margin: 0 auto;
+    padding: 0;       
+}
+li,a,ul,p{
+    margin: 0;
+    padding: 0;
+    display:inline;   
+}
+p{
+    font-size: 11pt;
+    font-family: 'Segoe UI';
+}
+ul{
+    list-style: none;
+}
+li{
+    display: block;
+}
+a{
+    text-decoration: none;
+    font-family: "微軟正黑體";
+    color:black;
+    font-size: 13px;
+}
+.boxtop{
+    max-width: calc(1600px + 10%);
+    margin-top: 1px;
+    margin: auto;
+}
+.nav_all{
+    width: 90%;
+    height: 54px;    
+    display: flex;
+    margin: auto;
+    
+}
+img{
+    width: 108px;    
+    padding: 16px 6px 10px;
+    /* background-image: url("../img/RE1Mu3b.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    background-position: center;
+    display: block;
+    
+}
+#logo{
+    width: 137px;
+    height: 54px;
+    float: left;
+}
+#menu_C{
+    width: calc(100% - 137px - 422px);
+    min-width: 386px;
+    height: 54px;
+    float: left;
+    /* background-color: aqua; */
+}
+.menu{
+    display: block;
+    display: flex;
+}
+.tapon{
+    margin-top: 4px; 
+    padding: 16px 8px 10px;
+    
+}
+#menu_R{
+    width: 422px;
+    max-width: 422px;
+    height: 100%;
+    float: right;
+    display: flex;    
+    justify-content: space-around;  
+    white-space:nowrap;/*文字強制不換行*/
+}
+#icon4{
+    margin-top: 12px;
+    
+}
+.tapon1:hover .bs{
+    /* text-decoration: underline; */
+    border-bottom: 1px solid;     
+}
+#mic{
+    position: relative;
+}
+
+.list_all{
+    width: 900%;
+    background-color: rgba(224, 224, 224, 0.836);
+    border-radius: 3px;
+    position: absolute;    
+    z-index: 5;
+    margin-top: 14px;
+    display: none;
+    left: -580%;
+    
+}
+.list_1 p,.list_2 p,
+.list_3 p,.list_4 p,
+.list_5 p,.list_6 p
+{   
+    
+    font-weight: 500;
+    margin: 18px;
+}
+.list{   
+    
+    margin: 18px;
+}
+.list_d{
+    font-size: 10pt;    
+}
+.list:hover a{   
+    border-bottom: 1px solid;     
+}
+
+.listoo{
+    display: block;
+}
+.listcc{
+    background-color: rgba(224, 224, 224, 0.836);
+}
+.boxtop{
+    display: block;
+}
+.pad_nav{
+    display: none;
+}
+.list_bb{
+    width: calc(100% / 6);
+}
+.list_1,.list_2,
+.list_3,.list_4,
+.list_5,.list_6
+{
+    display: block;
+    float: left;
+}
+/********************  V pad modeV  *********************/
+.pad_list_allco{
+    display: none;
+}
+.pad_nav{
+    width: 90%;
+    margin: auto;
+
+}
+.line{
+    width: 100%;
+    position: absolute;
+    border-top: 4px solid black;
+}
+.pad_menu{
+    float: left;
+    position: relative;
+    width: 40px;
+    height: 48px;
+}
+#line1{    
+    top: 12%;
+}
+
+#line2{   
+    top: 48%;
+}
+#line3{    
+    top: 85%;
+}
+@keyframes line1_ani{
+   60% {
+       top:48%;
+       transform: rotate(0deg);
+      }
+   100% {top: 48%;
+         transform: rotate(45deg);
+   }
+}
+@keyframes line2_ani{
+    60% {
+        top:48%;
+        opacity:0.6;
+       }
+    80% {top: 48%;
+        opacity:0;
+    }
+    100% {top: 48%;
+        opacity:0;
+    }
+}
+@keyframes line3_ani{
+    60% {
+        top:48%;
+        transform: rotate(0deg);
+       }
+    100% {top: 48%;
+          transform: rotate(-45deg);
+    }
+}
+.line1{
+    animation: line1_ani 1s;
+    animation-fill-mode: forwards;
+}
+.line2{
+    animation: line2_ani 1s;
+    animation-fill-mode: forwards;
+}
+.line3{
+    animation: line3_ani 1s;
+    animation-fill-mode: forwards;
+}
+/*---------------上面menu動畫樣式---------------*/
+
+
+
+
+
+
+
+/*--------******************-------上面連結列樣式-------------**************--*/
+
+#img_top {
+    /* min-width: 100%; */
+    /* background-color: aqua; */
+    /* background-image: url("img/RE2lEVR.jpg"); */
+    max-width: calc(1600px + 10%);
+    /* width: 100%; */
+    padding: 0% 5%;    
+    height: 33vw;
+    max-height: 598px;
+    margin: auto;  
+}
+.imgin{
+    background-size: cover;
+    background-position: center; 
+}
+/* .swiper-pagination-bullet .swiper-pagination-bullet-active{
+color: blue;
+} */
+
+.box_sliver{
+    width: 90%;
+    height: 12vw;
+    margin: auto;
+    display: flex;   
+    /* margin-top: 50px; */
+    /* background-color: blue; */
+}
+.box_sli{
+    width: calc(100% / 4 );    
+    /* background-color: yellowgreen; */
+    padding: 0px 12px 0px 12px; 
+    float: left;    
+}
+.box_sliver_all {
+    max-width: calc(1600px + 10%);
+    margin-top: 50px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+#box1,#box5{
+    padding-left: 0px;
+}
+#box4,#box8{
+    padding-right: 0px;
+}
+h3{
+    font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif 
+}
+.slo{ 
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slo_text{
+    height: 100%;
+    /* background-color: brown; */
+    margin-top: 37px;
+    display: block;
+}
+#box1-1{    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/RE2FHD0.png');
+    background-size: cover;
+    background-position: center;
+}
+#box2-1{    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/RWfbJT.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#box3-1{    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/RE1uWfh.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#box4-1{    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/RWlux6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.link_1{
+    color: rgb(12, 12, 212);
+    display: block;
+    margin-top: 10px;
+    font-size: 12pt;
+    
+}
+i{
+    margin-left: 5px;
+}
+.link_1:hover i{
+    margin-left: 10px;
+}
+
+/*-----------------下半部---------------*/
+.box_text{
+    width: 90%;
+    margin: auto;
+    
+}
+#img_top1{
+    /* width: 90%; */
+    max-width: calc(1600px + 10%);
+    padding: 0% 5%; 
+    height: 33vw;
+    /* max-height: 646px; */
+    margin: auto;
+    /* background-image: url("img/RW5kpU.jpg"); */
+    background-size: cover;
+    background-position: center;  
+    margin-top: 150px;  
+}
+#box5-1{    
+    width: 100%;
+    background-image: url('../img/RE1CmIw.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#box6-1{    
+    width: 100%;
+    background-image: url('../img/RE2mheW.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#box7-1{    
+    width: 100%;
+    background-image: url('../img/REOLLm.png');
+    background-size: cover;
+    background-position: center;
+}
+#box8-1{    
+    width: 100%;
+    background-image: url('../img/RE2OfW4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slo2{    
+    height: 100%;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+h2{ 
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0px;  
+}
+/*------------------footer------------------------------------*/
+.grud{
+    /* width: 90%; */
+    /* height: 100px; */
+    /* background-color: aqua; */
+    max-width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+}
+.footer_top{
+    max-width: 100%;
+    height: 300px;
+    margin: auto;
+    background-color:rgb(224, 224, 224);
+    margin-top: 50px;
+}
+.footer_down{
+    max-width: 100%;
+    background-color:rgb(224, 224, 224);
+    height: 72px;
+    padding: 30px 5% 16px;
+    margin: auto;
+}
+.flist,#flistlast{
+    margin:3px 10px 0px 20px;
+    font-size: 8pt;
+}
+#flisthand{
+    font-size: 8pt;
+}
+.footer_list,.footer_down{
+    display: flex;
+    justify-content: space-between;
+}
+.swiper-pagination-bullet{
+    background-color: green;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .boxtop{
+        display: none;
+    }
+    .pad_nav{
+        display: block;
+        width: 90%;
+    }
+    .pad_menu{
+        position: relative;
+        margin-left: 10px;
+        
+    }
+    .pad_list_all{
+        width: 1024px;
+        margin-top: 50px;       
+        position: absolute;
+        z-index: 5;       
+        left: -150%;
+        background-color: rgb(209, 209, 209);
+    }
+    .list_bb{
+        border: 1px ;
+        border-style: outset;
+    }
+
+    .pad_list_ulbb,.pad_list_bb{
+        margin: 15px;
+        display: block;
+    }
+    .pad_search{
+        margin-left: 10px;
+        float: left;
+    }
+    .pad_logo{
+        float: left;
+        margin-left: 30%
+   }
+   img{
+    width: 137px;
+    /* height: 54px; */
+   }
+    .pad_login{
+        margin-top: 10px;
+        margin-left: 10px;
+        float: right;
+    }
+    .pad_chiachia{
+        margin-top: 10px;
+        float: right;
+    }
+    /*--------******************-------上面連結列樣式-------------**************--*/
+
+#img_top {
+    max-width: calc(1600px + 10%);
+    padding: 0% 5%;    
+    height: 33vw;
+    max-height: 598px;
+    margin: auto; 
+    clear: both; 
+}
+.imgin{
+    background-size: cover;
+    background-position: center; 
+}
+
+.box_sliver{
+    width: 90%;
+    height: 12vw;
+    margin: auto;
+    display: flex;   
+}
+.box_sli{
+    width: calc(100% / 4 );    
+  
+    padding: 0px 12px 0px 12px; 
+    float: left;    
+}
+.box_sliver_all {
+    max-width: calc(1600px + 10%);
+    margin-top: 50px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+#box1,#box5{
+    padding-left: 0px;
+}
+#box4,#box8{
+    padding-right: 0px;
+}
+h3{
+    font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif 
+}
+.slo{ 
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slo_text{
+    height: 100%;
+    margin-top: 37px;
+    display: block;
+}
+#box1-1{    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/RE2FHD0.png');
+    background-size: cover;
+    background-position: center;
+}
+#box2-1{    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/RWfbJT.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#box3-1{    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/RE1uWfh.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#box4-1{    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/RWlux6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.link_1{
+    color: rgb(12, 12, 212);
+    display: block;
+    margin-top: 10px;
+    font-size: 12pt;
+    
+}
+i{
+    margin-left: 5px;
+}
+.link_1:hover i{
+    margin-left: 10px;
+}
+
+}

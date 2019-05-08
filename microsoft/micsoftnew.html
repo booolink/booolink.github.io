@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/micsoftnew.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 
 <body>
@@ -51,12 +52,46 @@
     </nav>
 
 
+
     <nav class="box_mastr">
-        <div id="img_top" class='img_top'>
+        <!-- <div id="img_top" class='img_top'> -->
+        <!-- Swiper -->
+        <div id="img_top" class="swiper-container img_top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide imgin" style="background-image:url(img/RE2OdIC.jpg)"></div>
+                <div class="swiper-slide imgin" style="background-image:url(img/RE2FZRD.png)"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+
         </div>
     </nav>
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+
     <div id="box_sliver_all1" class="box_sliver_all">
         <div id="" class="box_sliver">
+
             <div id="box1" class="box_sli">
                 <div id="box1-1" class="slo"></div>
                 <div id="box1-2" class="slo_text">
@@ -67,16 +102,18 @@
                     </a>
                 </div>
             </div>
+
             <div id="box2" class="box_sli">
                 <div id="box2-1" class="slo"></div>
                 <div id="box2-2" class="slo_text">
-                    <h3>Surface Book 2</h3>
-                    <p>極致筆記型電腦的超強效能。</p>
+                    <h3>Surface Go</h3>
+                    <p>隨身 型動力。</p>
                     <br><a class="link_1" href="#">立即選購
                         <i class="fas fa-angle-right"></i>
                     </a>
                 </div>
             </div>
+
             <div id="box3" class="box_sli">
                 <div id="box3-1" class="slo"></div>
                 <div id="box3-2" class="slo_text">
@@ -87,6 +124,7 @@
                     </a>
                 </div>
             </div>
+
             <div id="box4" class="box_sli">
                 <div id="box4-1" class="slo"></div>
                 <div id="box4-2" class="slo_text">
@@ -96,19 +134,56 @@
                         <i class="fas fa-angle-right"></i></a>
                 </div>
             </div>
+
         </div>
     </div>
 
 
+
     <nav class="box_mastr2">
-        <div id="img_top1" class='img_top1'>
+        <!-- <div id="img_top" class='img_top'> -->
+        <!-- Swiper -->
+        <div id="img_top1" class="swiper-container img_top1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide imgin" style="background-image:url(img/RW5kpU.jpg)"></div>
+                <div class="swiper-slide imgin" style="background-image:url(img/RE2FZRD.png)"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+
         </div>
     </nav>
+
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
     <div id="box_sliver_all2" class="box_sliver_all">
+
         <div id="" class="box_text">
             <h2>適用於工作地點</h2>
         </div>
+
         <div id="" class="box_sliver">
+
             <div id="box5" class="box_sli">
                 <div id="box5-1" class="slo2"></div>
                 <div id="box5-2" class="slo_text">
@@ -118,8 +193,8 @@
                         <i class="fas fa-angle-right"></i>
                     </a>
                 </div>
-
             </div>
+
             <div id="box6" class="box_sli">
                 <div id="box6-1" class="slo2"></div>
                 <div id="box6-2" class="slo_text">
@@ -130,6 +205,7 @@
                     </a>
                 </div>
             </div>
+
             <div id="box7" class="box_sli">
                 <div id="box7-1" class="slo2"></div>
                 <div id="box7-2" class="slo_text">
@@ -140,15 +216,17 @@
                     </a>
                 </div>
             </div>
+
             <div id="box8" class="box_sli">
                 <div id="box8-1" class="slo2"></div>
-                <div id="box8-2" class="slo_text">
+                <div id="box7-2" class="slo_text">
                     <h3>取得 Visual Studio 2019</h3>
                     <p>下載 Visual Studio 2019，一款提高生產力、現代和創新的 IDE。</p>
                     <br><a class="link_1" href="#"> 下載 NOW
                         <i class="fas fa-angle-right"></i></a>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -163,13 +241,13 @@
 
         </div>
         <div id="" class="footer_down">
-            <a id="flisthand"href="#">中文(台灣)</a>
+            <a id="flisthand" href="#">中文(台灣)</a>
             <ul id="footer_list" class="footer_list">
-                <li><a id="footer_list1" class="flist"href="#">連絡 Microsoft</a></li>
-                <li><a id="footer_list2" class="flist"href="#">隱私權聲明</a></li>
-                <li><a id="footer_list3" class="flist"href="#">使用規定</a></li>
-                <li><a id="footer_list4" class="flist"href="#">商標</a></li>
-                <li><a id="footer_list5" class="flist"href="#">有關我們的廣告訊息</a></li>
+                <li><a id="footer_list1" class="flist" href="#">連絡 Microsoft</a></li>
+                <li><a id="footer_list2" class="flist" href="#">隱私權聲明</a></li>
+                <li><a id="footer_list3" class="flist" href="#">使用規定</a></li>
+                <li><a id="footer_list4" class="flist" href="#">商標</a></li>
+                <li><a id="footer_list5" class="flist" href="#">有關我們的廣告訊息</a></li>
                 <li id="flistlast"> © Microsoft 2019 </li>
             </ul>
         </div>

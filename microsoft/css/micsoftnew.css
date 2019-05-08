@@ -28,8 +28,7 @@ a{
     font-size: 13px;
 }
 .boxtop{
-    width: 100%;
-    /* max-width: calc(1600px + 10%); */
+    max-width: calc(1600px + 10%);
     margin-top: 1px;
 }
 .nav_all{
@@ -71,7 +70,7 @@ img{
     
 }
 #menu_R{
-    width: calc(422px - 15px);
+    width: 422px;
     max-width: 422px;
     height: 100%;
     float: right;
@@ -81,29 +80,34 @@ img{
 }
 #icon4{
     margin-top: 12px;
-    margin-left: 0px;
+    margin-left: -15px;
 }
 .tapon1:hover p{
     /* text-decoration: underline; */
     border-bottom: 2px solid;     
 }
 /*---------------上面連結列樣式---------------*/
-.box_mastr .box_mastr2{
-    width: 100%;
-    /* max-width: calc(1600px + 10%); */
+.box_mastr{
+    max-width: calc(1600px + 10%);
 }
-#img_top{
-    width: 90%;
-    padding: 0% 5%;
+#img_top {
     /* min-width: 100%; */
+    /* background-color: aqua; */
+    /* background-image: url("img/RE2lEVR.jpg"); */
+    width: 100%;
+    padding: 0% 5%;    
     height: 33vw;
     max-height: 598px;
-    margin: auto;
-    /* background-color: aqua;*/
-    background-image: url("../img/RE2lEVR.jpg");
-    background-size: cover;
-    background-position: center;    
+    margin: auto;         
 }
+.imgin{
+    background-size: cover;
+    background-position: center; 
+}
+/* .swiper-pagination-bullet .swiper-pagination-bullet-active{
+color: blue;
+} */
+
 .box_sliver{
     width: 90%;
     height: 100%;
@@ -119,8 +123,7 @@ img{
     float: left;    
 }
 .box_sliver_all{
-    width: 100%;
-    /* max-width: calc(1600px + 10%); */
+    max-width: calc(1600px + 10%);
     margin-top: 50px; 
 }
 #box1,#box5{
@@ -197,7 +200,7 @@ i{
     height: 33vw;
     max-height: 646px;
     margin: auto;
-    background-image: url("../img/RW5kpU.jpg");
+    /* background-image: url("img/RW5kpU.jpg"); */
     background-size: cover;
     background-position: center;  
     margin-top: 150px;  
@@ -247,17 +250,14 @@ h2{
     margin-top: 200px;
 }
 .footer_top{
-    width: 100%;
-    /* max-width: calc(1600px + 10%); */
+    max-width: calc(1600px + 10%);
     height: 300px;
     margin: auto;
     background-color:rgb(224, 224, 224);
     margin-top: 50px;
 }
 .footer_down{
-    width: 100%;
-    /* max-width: calc(1600px + 10%); */
-    margin: auto;
+    max-width: calc(1600px + 10%);
     background-color:rgb(224, 224, 224);
     height: 72px;
     padding: 30px 5% 16px;
