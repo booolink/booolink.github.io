@@ -1,0 +1,50 @@
+@import "_var.scss";
+
+* {
+    // outline: 1px solid red;
+}
+
+.box3 {
+  @extend %box;
+  @extend %boxcolor;
+}
+.box4 {
+  @extend %box;
+  @extend %boxcolor;
+}
+.css-selector-demo {
+  @extend %box;
+  background-color: blue;
+}
+.el {
+  @extend %box;
+  background-color: green;
+}
+
+
+#canvas {
+    float: left;
+    margin: 50px 0px 0px 100px;
+}
+
+.box2 {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(165, 42, 155);
+}
+
+.box {
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+} 
+
+.none {
+    display: none;
+}
+.box7{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}

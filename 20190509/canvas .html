@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/canvas.css"> -->
+    <link rel="stylesheet" href="css/animejs.css">
+</head>
+
+<body>
+    <!-- <div class="box">
+        <div class="box7"></div>
+    </div>
+    <div class="box2">
+        <canvas id="canvas" width="20" height="40">
+        </canvas>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div> -->
+
+
+
+    <article>
+        <div class="css-selector-demo"></div>
+        <div class="el"></div>
+    </article>
+
+
+    <script type="text/javascript" src="js/anime.js"></script>
+
+
+    <script>
+        
+        anime({
+            
+            targets: '.css-selector-demo .el',
+            translateX: 250
+        });
+
+    </script>
+
+
+
+
+
+    <!-- <script>
+
+        var canvas = document.getElementById('canvas');
+
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+
+            ctx.beginPath();
+            ctx.moveTo(20, 0);
+            ctx.lineTo(0, 20); //(x,y)
+            ctx.lineTo(20, 40);
+            ctx.lineTo(20, 0);
+
+            ctx.fillStyle = "rgba(0,255,0,0.8)";
+            ctx.fill();
+        }
+
+        var box3 = document.querySelector('.box3')
+
+        canvas.addEventListener('click', canHandler)
+
+        function canHandler() {
+            box3.classList.toggle('none')
+        }
+
+    </script> -->
+
+
+</body>
+
+</html>

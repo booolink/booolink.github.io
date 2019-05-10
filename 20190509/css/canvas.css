@@ -1,0 +1,48 @@
+.box3, .box4, .css-selector-demo, .el {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-top: 45px;
+  margin-left: 40px;
+}
+
+.box3, .box4 {
+  background-color: blueviolet;
+}
+
+.css-selector-demo {
+  background-color: blue;
+}
+
+.el {
+  background-color: green;
+}
+
+#canvas {
+  float: left;
+  margin: 50px 0px 0px 100px;
+}
+
+.box2 {
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+  background-color: #a52a9b;
+}
+
+.box {
+  width: 100%;
+  height: 500px;
+  background-color: blue;
+}
+
+.none {
+  display: none;
+}
+
+.box7 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+/*# sourceMappingURL=canvas.css.map */

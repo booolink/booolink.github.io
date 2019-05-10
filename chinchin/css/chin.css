@@ -15,7 +15,12 @@ body{
     background-attachment: fixed;
 }
 /* ---------------------^環境設定^------------------------------ */
-
+.pad_chin_1{
+   display: none;
+}
+.chin_1{
+    display: block;
+ }
 .chin_1{
     width: 1140px;
     height: 887px;
@@ -681,6 +686,7 @@ br{
     height: 250px;
     float: right;
     margin-right: 30px;
+    border-radius: 12px;
     background-color: #8c2c44e5;
 }
 .chin3_ad{
@@ -688,6 +694,7 @@ br{
     height: 960px;
     background-image: url(../img/visacard-05.jpg);
     background-repeat: no-repeat;
+    border-radius: 8px;
     position: absolute;
     z-index: 3;
     top: 50px;
