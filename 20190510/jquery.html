@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="box" class="box"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+
+    <script>
+
+        // $.ajax({
+        //     url: "https://jsonplaceholder.typicode.com/comments",
+
+        //     success: function (response) {
+        //         console.log(response)
+        //     }
+
+        // });
+    
+
+        $.ajax({
+            url: "https://jsonplaceholder.typicode.com/comments",
+            success: success,
+        });
+
+        function success(response) {
+            var i;
+            for (i = 0; i < response.length; i++) {
+                $('.box').append(response[i].email + '<br>');
+            }
+        }
+
+    </script>
+</body>
+
+
+
+</html>
