@@ -36,7 +36,7 @@ body{
     border-radius:0.4rem; 
     background-image: url(../img/baneer.jpg);
     background-repeat: no-repeat;    
-    margin-left: 360px;
+    left: 360px;
     position: absolute;
     z-index: 999;
     opacity: 0.8;
@@ -198,7 +198,7 @@ br{
     background-position: center;
     background-size: contain;
     position: fixed;
-    right: 100px;
+    right: 160px;
     top: 487px;
     z-index: 999;
 }
@@ -212,7 +212,7 @@ br{
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
-    right: 100px;
+    right: 160px;
     top: 587px;
     z-index: 999;
 }
@@ -963,30 +963,46 @@ br{
 /* ------------------------------------------------------------- */
 /* ------------------------- 關於親親 -------------------------- */
 /* ------------------------------------------------------------- */
-.chin_5{
+/* .chin_5{
     width: 1140px;
     height: 970px;
     margin: auto;
     clear: both;
     position: relative;
-    /* background-color: rgb(0, 4, 255); */
-}
-.chin5_box1{
+    background-color: rgb(0, 4, 255);
+} */
+/* .chin5_box1{
     width: 3240px;
     height: 637px;
     position: absolute;
     z-index: -1;
     right: -1140px;
     background-color: rgba(230, 230, 230, 0.199);
+} */
+
+.chin_5{
+    width: 100%;
+    height: 637px;
+    margin-bottom: 363px;
+    background-color: rgba(230, 230, 230, 0.199);
+    
 }
+.chin5_box1{
+    width: 1140px;
+    height: 970px;
+    margin: auto;
+    position: relative;
+}
+
+
 .chin5_right{
     width: 30px;
     font-family:"微軟正黑體" ;
     font-size: 40pt;
     font-weight: 900;
-    float: right;
-    margin-right: 180px;
-    margin-top: 90px;
+    position: absolute;
+    right: 100px;
+    top: 90px;
     color: #333;
     text-shadow:-2px -2px rgb(255, 255, 255);
 }
@@ -995,9 +1011,11 @@ br{
     height: 502px;
     border-radius:2px; 
     background-color: rgb(255, 29, 37,0.58);
-    margin-top: 90px;
-    margin-left: 1166px;
-}
+    position: absolute;
+    left: 205px;
+    /* margin-top: 90px;
+    margin-left: 1166px;*/
+} 
 .chin5_txt{
     font-family:"微軟正黑體" ;
     font-size: 26pt;
@@ -1014,7 +1032,7 @@ br{
     background-color: rgba(153, 153, 153, 0.822);
     position: absolute;
     right: 100px;
-    top: 500px;
+    top: 450px;
     
 }
 .chin5_title{
