@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    <script src="js/swiper.js"></script>    
 
     <!-- 親親影城 -->
     <nav class="chin_1">
@@ -1898,7 +1898,7 @@
                 <div class="swiper-button-prev"></div>
             </div>
             <!-- Swiper JS -->
-            <script src="js/swiper.js"></script>
+            
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper('.swiper-container', {
@@ -1914,6 +1914,7 @@
                     },
                 });
             </script>
+            
         </div>
 
         <div id="May" class="introduction" data-aos="flip-up" data-aos-duration="2000">
@@ -1970,7 +1971,7 @@
                 <div class="swiper-button-prev"></div>
             </div>
             <!-- Swiper JS -->
-            <script src="js/swiper.js"></script>
+         
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper('.swiper-container', {
@@ -2036,7 +2037,7 @@
                 <div class="swiper-button-prev"></div>
             </div>
             <!-- Swiper JS -->
-            <script src="js/swiper.js"></script>
+         
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper('.swiper-container', {
@@ -2131,11 +2132,7 @@
 
     </div>
 
-    <script src="js/aos.js"></script>
 
-    <script>
-        AOS.init();
-    </script>
 
     <!--------------------------------------------------------------  -->
     <!-------------------------- 990px --------------------------  -->
@@ -2149,19 +2146,19 @@
 
                 <div class="m_menu_link m_menu_link_none">
                     <ul class="m_link_all">
-                        <li class="m_link"><a class="m_acolor" href="#m_chin_2">場次專區</a>
+                        <li id="m_link1" class="m_link"><a class="m_acolor" href="#m_chin_2">場次專區</a>
                             <div class="m_bg"></div>
                         </li>
-                        <li class="m_link"><a class="m_acolor" href="#m_chin_3">活動專區</a>
+                        <li id="m_link2" class="m_link"><a class="m_acolor" href="#m_chin_3">活動專區</a>
                             <div class="m_bg"></div>
                         </li>
-                        <li class="m_link"><a class="m_acolor" href="#m_chin_4">電影介紹</a>
+                        <li id="m_link3" class="m_link"><a class="m_acolor" href="#m_chin_4">電影介紹</a>
                             <div class="m_bg"></div>
                         </li>
-                        <li class="m_link"><a class="m_acolor" href="#m_chin_5">關於親親</a>
+                        <li id="m_link4" class="m_link"><a class="m_acolor" href="#m_chin_5">關於親親</a>
                             <div class="m_bg"></div>
                         </li>
-                        <li class="m_link"><a class="m_acolor" href="#m_chin_6">交通指南</a>
+                        <li id="m_link5" class="m_link"><a class="m_acolor" href="#m_chin_6">交通指南</a>
                             <div class="m_bg"></div>
                         </li>
                     </ul>
@@ -2175,8 +2172,8 @@
             let line3 = document.querySelector('#line3')
             let menu_link = document.querySelector('.m_menu_link_none')
 
-
             menu_ani.addEventListener('click', menuHandler)
+
 
 
             function menuHandler() {
@@ -2185,7 +2182,6 @@
                 line3.classList.toggle('line3_ani')
                 menu_link.classList.toggle('m_menu_link_none')
                 menu_link.classList.toggle('m_menu_link_block')
-
             }
 
         </script>
@@ -2200,22 +2196,22 @@
 
     <div class="m_chin3">
         <div id="m_chin3_topbox" class="m_chin3_topbox">
-            <div id="m_chin3_text1" class="m_chin3_text movietxtcolor">
-                <a href="">5月6日(一)~5月8日(三)</a>
+            <div id="chin3_text1" class="chin3_text movietxtcolor">
+                <a href="#">5月6日(一)~5月8日(三)</a>
             </div>
-            <div id="m_chin3_text2" class="m_chin3_text ">
-                <a href="">5月9日(四)~5月11日(六)</a>
+            <div id="chin3_text2" class="chin3_text">
+                <a href="#">5月9日(四)~5月11日(六)</a>
 
             </div>
         </div>
 
-        <div class="movie_all1">
-            <div id="movie1" class="m_movie">
+        <div class="m_movie_all1 ">
+            <div id="movie1" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading1">
-                    <p id="movie_test1" class="m_text">復仇者聯盟4：<br>終局之戰</p>
+                    <p id="movie_test1" class="text">復仇者聯盟4：終局之戰<br>Avengers: Endgame</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2249,12 +2245,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie2" class="m_movie">
+            <div id="movie2" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2">
-                    <p id="movie_test2" class="m_text">復仇者聯盟4：<br>終局之戰</p>
+                    <p id="movie_test2" class="text">復仇者聯盟4：終局之戰<br>Avengers: Endgame</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2288,12 +2284,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie3" class="m_movie">
+            <div id="movie3" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading3">
-                    <p id="movie_test3" class="m_text">地獄怪客：<br>血后的崛起</p>
+                    <p id="movie_test3" class="text">地獄怪客：血后的崛起<br>Hellboy: Rise of the Blood Queen</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2327,12 +2323,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie4" class="m_movie">
+            <div id="movie4" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading4">
-                    <p id="movie_test4" class="m_text">復仇者聯盟4：<br>終局之戰</p>
+                    <p id="movie_test4" class="text">復仇者聯盟4：終局之戰<br>Avengers: Endgame</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2366,12 +2362,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie5" class="m_movie">
+            <div id="movie5" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading5">
-                    <p id="movie_test5" class="m_text">復仇者聯盟4：<br>終局之戰</p>
+                    <p id="movie_test5" class="text">復仇者聯盟4：終局之戰<br>Avengers: Endgame</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2405,12 +2401,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie6" class="m_movie">
+            <div id="movie6" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading6">
-                    <p id="movie_test6" class="m_text">禁入墳場</p>
+                    <p id="movie_test6" class="text">禁入墳場<br>Pet Sematary</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2444,12 +2440,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie7" class="m_movie">
+            <div id="movie7" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading7">
-                    <p id="movie_test7" class="m_text">復仇者聯盟4：<br>終局之戰</p>
+                    <p id="movie_test7" class="text">復仇者聯盟4：終局之戰<br>Avengers: Endgame</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2483,12 +2479,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie8" class="m_movie">
+            <div id="movie8" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading8">
-                    <p id="movie_test8" class="m_text">哭泣的女人</p>
+                    <p id="movie_test8" class="text">哭泣的女人<br>The Curse of La Llorona</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2522,12 +2518,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie9" class="m_movie">
+            <div id="movie9" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading9">
-                    <p id="movie_test9" class="m_text">禁入墳場</p>
+                    <p id="movie_test9" class="text">禁入墳場<br>Pet Sematary</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2561,12 +2557,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie10" class="m_movie">
+            <div id="movie10" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading10">
-                    <p id="movie_test9" class="m_text">大冒險家</p>
+                    <p id="movie_test9" class="text">大冒險家<br>Missing Link</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2600,12 +2596,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie11" class="m_movie">
+            <div id="movie11" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading11">
-                    <p id="movie_test9" class="m_text">大冒險家</p>
+                    <p id="movie_test9" class="text">大冒險家<br>Missing Link</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2640,13 +2636,14 @@
                 </div>
             </div>
         </div>
-        <div class="movie_all2 m_movie_none">
-            <div id="movie1" class="m_movie">
+
+        <div class="m_movie_all2 movie_none">
+            <div id="movie1" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-1">
-                    <p id="movie_test1" class="m_text">復仇者聯盟4：<br>終局之戰</p>
+                    <p id="movie_test1" class="text">復仇者聯盟4：終局之戰<br>Avengers: Endgame</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2680,12 +2677,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie2" class="m_movie">
+            <div id="movie2" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-2">
-                    <p id="movie_test2" class="m_text">名偵探皮卡丘</p>
+                    <p id="movie_test2" class="text">名偵探皮卡丘 <br>Pokemon Detective Pikachu</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2722,12 +2719,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie3" class="m_movie">
+            <div id="movie3" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-3">
-                    <p id="movie_test3" class="m_text">名偵探皮卡丘</p>
+                    <p id="movie_test3" class="text">名偵探皮卡丘<br>Pokemon Detective Pikachu</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2762,12 +2759,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie4" class="m_movie">
+            <div id="movie4" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-4">
-                    <p id="movie_test4" class="m_text">復仇者聯盟4：<br>終局之戰</p>
+                    <p id="movie_test4" class="text">復仇者聯盟4：終局之戰<br>Avengers: Endgame</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2802,12 +2799,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie5" class="m_movie">
+            <div id="movie5" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-5">
-                    <p id="movie_test5" class="m)text">大冒險家</p>
+                    <p id="movie_test5" class="text">大冒險家<br>Missing Link</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2841,12 +2838,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie6" class="m_movie">
+            <div id="movie6" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-6">
-                    <p id="movie_test6" class="text">復仇者聯盟4：<br>終局之戰</p>
+                    <p id="movie_test6" class="text">復仇者聯盟4：終局之戰<br>Avengers: Endgame</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2879,12 +2876,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie7" class="m_movie">
+            <div id="movie7" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-7">
-                    <p id="movie_test7" class="m_text">詐騙女神</p>
+                    <p id="movie_test7" class="text">詐騙女神<br>The Hustle</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2921,12 +2918,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie8" class="m_movie">
+            <div id="movie8" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-8">
-                    <p id="movie_test8" class="m_text">哭泣的女人</p>
+                    <p id="movie_test8" class="text">哭泣的女人<br>The Curse of La Llorona</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2959,12 +2956,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie9" class="m_movie">
+            <div id="movie9" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-9">
-                    <p id="movie_test9" class="m_text">大冒險家</p>
+                    <p id="movie_test9" class="text">大冒險家<br>Missing Link</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -2998,12 +2995,12 @@
                     </div>
                 </div>
             </div>
-            <div id="movie10" class="m_movie">
+            <div id="movie10" class="movie">
                 <!-- 電影標題 -->
                 <div class="movie_text movie_text_1">
                     <!-- 分級ico -->
                     <img class="Grading_all Grading2-10">
-                    <p id="movie_test9" class="m_text">禁入墳場</p>
+                    <p id="movie_test9" class="text">禁入墳場<br>Pet Sematary</p>
                 </div>
                 <div class="movebox_1">
                     <!-- 電影海報 -->
@@ -3039,22 +3036,297 @@
             </div>
 
         </div>
+        <!-- 場次專區 Script-->
 
         <script>
-            // var topbox1 = document.querySelector('#m_chin3_text1')
-            var topbox2 = document.querySelector('#m_chin3_text2')
-            // var movie1 = document.querySelector('.movie_all1')
-            var movie2 = document.querySelector('.movie_all2')
+            var chin2_dis1 = document.querySelector('#chin3_text1')
+            var chin2_dis2 = document.querySelector('#chin3_text2')
+            var movie_all1 = document.querySelector('.m_movie_all1')
+            var movie_all2 = document.querySelector('.m_movie_all2')
+            var color = document.querySelector('.movietxtcolor')
 
+            chin2_dis1.addEventListener('click', dis1Hendler)
+            chin2_dis2.addEventListener('click', dis2Hendler)
+
+            function dis1Hendler() {
+                movie_all1.classList.add('m_movie_block')
+                movie_all1.classList.remove('m_movie_none')
+                movie_all2.classList.add('m_movie_none')
+                movie_all2.classList.remove('m_movie_block')
+                chin2_dis1.classList.add('movietxtcolor')
+                chin2_dis2.classList.remove('movietxtcolor')
+            }
+            function dis2Hendler() {
+                movie_all1.classList.add('m_movie_none')
+                movie_all1.classList.remove('m_movie_block')
+                movie_all2.classList.add('m_movie_block')
+                movie_all2.classList.remove('m_movie_none')
+                chin2_dis2.classList.add('movietxtcolor')
+                chin2_dis1.classList.remove('movietxtcolor')
+            }
+        </script>
+
+    </div>
+
+    <div class="m_chin4 m_movie_none">
+        <div class="m_chin4_ad "></div>
+    </div>
+
+    <div id="m_chin5 m_movie_none" class="m_chin5 m_movie_none">
+
+        <div id="April" class="introduction" >
+            <div class="month">
+                <P>四月</P>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="int_img_a1" class="int_img"></div>
+                        <div id="int_txt1" class="int_txt">地獄怪客：<br>血后的崛起</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_a2" class="int_img"></div>
+                        <div id="int_txt2" class="int_txt">禁入墳場</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_a3" class="int_img"></div>
+                        <div id="int_txt3" class="int_txt">哭泣的女人</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_a4" class="int_img"></div>
+                        <div id="int_txt4" class="int_txt">復仇者聯盟4：<br>終局之戰</div>
+                    </div>
+                    <!-- <div class="swiper-slide"></div> -->
+                    <!-- <div class="swiper-slide">Slide 6</div> -->
+                    <!-- <div class="swiper-slide">Slide 7</div> -->
+                    <!-- <div class="swiper-slide">Slide 8</div> -->
+                    <!-- <div class="swiper-slide">Slide 9</div> -->
+                    <!-- <div class="swiper-slide">Slide 10</div> -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- Swiper JS -->
+          
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+
+        </div>
+
+        <div id="May" class="introduction" >
+            <div class="month">
+                <P>五月</P>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="int_img_m1" class="int_img"></div>
+                        <div id="int_txtm1" class="int_txt">大冒險家</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_m2" class="int_img"></div>
+                        <div id="int_txtm2" class="int_txt">詐騙女神</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_m3" class="int_img"></div>
+                        <div id="int_txtm3" class="int_txt">名偵探皮卡丘</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_m4" class="int_img"></div>
+                        <div id="int_txtm4" class="int_txt">捍衛任務3：<br>全面開戰</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_m5" class="int_img"></div>
+                        <div id="int_txtm5" class="int_txt">狗狗的旅程</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_m6" class="int_img"></div>
+                        <div id="int_txtm6" class="int_txt">樂獄</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_m7" class="int_img"></div>
+                        <div id="int_txtm7" class="int_txt">醜娃娃大冒險</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_m8" class="int_img"></div>
+                        <div id="int_txtm8" class="int_txt">阿拉丁- (晚場起)</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_m9" class="int_img"></div>
+                        <div id="int_txtm9" class="int_txt">城市獵人</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="int_img_m10" class="int_img"></div>
+                        <div id="int_txtm10" class="int_txt">哥吉拉2:<br>怪獸之王</div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- Swiper JS -->
             
-            topbox2.addEventListener('click', movie2Handler)
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
 
-           function movie2Handler() {
-             movie2.classList.remove('m_movie_none')
-           }
+        <div id="June" class="introduction" >
+                <div class="month">
+                    <P>六月</P>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div id="int_img_j1" class="int_img"></div>
+                            <div id="int_txtj1" class="int_txt">X戰警:黑鳳凰</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="int_img_j2" class="int_img"></div>
+                            <div id="int_txtj2" class="int_txt">寵物當家2</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="int_img_j3" class="int_img"></div>
+                            <div id="int_txtj3" class="int_txt">MIB星際戰警:<br>跨國行動</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="int_img_j4" class="int_img"></div>
+                            <div id="int_txtj4" class="int_txt">火箭人</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="int_img_j5" class="int_img"></div>
+                            <div id="int_txtj5" class="int_txt">玩具總動員4</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="int_img_j6" class="int_img"></div>
+                            <div id="int_txtj6" class="int_txt">安娜</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="int_img_j7" class="int_img"></div>
+                            <div id="int_txtj7" class="int_txt">靠譜歌王</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="int_img_j8" class="int_img"></div>
+                            <div id="int_txtj8" class="int_txt">安娜貝爾回家囉</div>
+                        </div>
+                        <!-- <div class="swiper-slide">Slide 9</div> -->
+                        <!-- <div class="swiper-slide">Slide 10</div> -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- Swiper JS -->
+             
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                </script>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- 切換java ---------------------------------------------->
+        <script>
+            var m_link1 = document.querySelector('#m_link1')
+            var m_link2 = document.querySelector('#m_link2')
+            var m_link3 = document.querySelector('#m_link3')
+
+            var m_chin3 = document.querySelector('.m_chin3')
+            var m_chin4 = document.querySelector('.m_chin4')
+            var m_chin5 = document.querySelector('.m_chin5')
+
+            m_link1.addEventListener('click', chin3Hendler)
+            m_link2.addEventListener('click', chin4Hendler)
+            m_link3.addEventListener('click', chin5Hendler)
+
+            function chin3Hendler() {
+                m_chin3.classList.remove('m_movie_none')
+                m_chin4.classList.add('m_movie_none')
+                m_chin5.classList.add('m_movie_none')
+            }
+            function chin4Hendler() {
+                m_chin5.classList.add('m_movie_none')
+                m_chin4.classList.remove('m_movie_none')
+                m_chin3.classList.add('m_movie_none')
+                
+            }
+            function chin5Hendler() {
+                m_chin5.classList.remove('m_movie_none')
+                m_chin4.classList.add('m_movie_none')
+                m_chin3.classList.add('m_movie_none')
+
+            }
+
 
         </script>
-    </div>
+
+
+    
+
+
+
+
+
+
+    
+    <script src="js/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

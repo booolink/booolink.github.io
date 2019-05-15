@@ -253,18 +253,19 @@
 @media screen and (max-width: 990px) {
   .chin_1,
   .pad_chin_1,
-  .chin2_topbox,
-  .chin_2,
   .pad_chin_2,
   .pad_chin2_topbox,
   .chin_3,
+  .chin_2,
+  .chin2_topbox,
   .chin_4,
   .chin_5,
   .chin_6 {
     display: none;
   }
-  .m_chin1,.m_chin2,.m_chin3
-  {
+  .m_chin1,
+  .m_chin2,
+  .m_chin3 {
     display: block;
   }
   .m_chin1 {
@@ -389,17 +390,19 @@
   }
   /*-------------------------------------------------*/
   .m_chin2 {
-    width: 100%;
+    width: 80%;
     height: 120px;
+    margin: auto;
   }
   .m_chin2_vip {
-    width: 80%;
+    width: 95%;
     height: 100%;
     margin: auto;
     border-radius: 0.4rem;
     background-image: url(../img/baneer.jpg);
     background-repeat: no-repeat;
   }
+  /********************************/
   .m_chin3 {
     width: 80%;
     /* height: 827px; */
@@ -407,13 +410,16 @@
     padding: 5px;
   }
   .m_chin3_topbox {
+    width: 78%;
     padding: 3px 5px;
     height: 30px;
+    border-radius: 4px;
     display: flex;
+    background-color: #666;
     line-height: 25px;
     margin-bottom: 10px;
   }
-  .m_chin3_text {
+  .chin3_text {
     height: 30px;
     font-family: "微軟正黑體";
     font-size: 16pt;
@@ -422,6 +428,7 @@
     border-radius: 2px;
     margin: 0px 5px;
   }
+  /*******************************************************/
   .m_movie {
     /*方格設定*/
     width: calc(100% / 4 - 3px);
@@ -433,11 +440,11 @@
     float: left;
     text-align: center;
   }
-  .movie_all1 {
+  .m_movie_all1 {
     /*電影第一頁面*/
     width: 100%;
   }
-  .movie_all2 {
+  .m_movie_all2 {
     /*電影第二頁面*/
     width: 100%;
   }
@@ -449,7 +456,7 @@
     float: left;
     margin: 3px 5px 3px 3px;
   }
-  .m_text {
+  .text {
     /*電影標題設定*/
     width: calc(100% - 20px - 15px);
     float: left;
@@ -473,10 +480,75 @@
     color: white;
     text-align: center;
   }
-  .m_movie_block{
+  .m_movie_block {
     display: block;
   }
-  .m_movie_none{
+  .m_movie_none {
     display: none;
   }
+  
+  /************************m_chin4**********************************/
+  .m_chin4 {
+    width: 80%;
+    margin: auto;
+  }
+  .m_chin4_ad {
+    width: 100%;
+    height: 560px;
+    background-image: url(../img/visacard-05.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 8px;
+    opacity: 0.8;
+  }
+  /************************m_chin5**********************************/
+  .m_chin5 {
+    width: 80%;
+    margin: auto;
+  }
+  .introduction {
+    box-shadow: 5px 3px 8px 5px black;
+    margin-bottom: 1300px;
+  }
+  .swiper-slide{
+    margin-bottom: 30px;
+  }
+  #April {
+    width: 100%;
+    height: 230px;
+    margin: 15px auto;
+  }
+  #May {
+    width: 100%;
+    height: 230px;
+    margin: 15px auto;
+  }
+  #June {
+    width: 100%;
+    height: 230px;
+    margin: 15px auto;
+  }
+  .month{
+    width: 100px;
+    height: 30px;
+    font-family: '微軟正黑體';
+    font-size: 16pt;
+    font-weight:900; 
+    display:inline-block;
+    text-align: center;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.644);
+    margin: 8px 0px 0px 8px;
+}
+/************************m_chin6**********************************/
+
+
+
+
+
+
+
+
+
+
 }
