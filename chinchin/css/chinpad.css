@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 @media screen and (max-width: 1250px) {
@@ -265,8 +265,31 @@
   }
   .m_chin1,
   .m_chin2,
-  .m_chin3 {
+  .m_chin3,
+  .m_chin0,
+  .m_chin4,
+  .m_chin5,
+  .m_chin6,
+  .m_chin7 {
     display: block;
+  }
+  .chinLOGO {
+    display: block;
+    font-size: 28pt;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    color: blueviolet;
+  }
+  .m_chin0 {
+    width: 100%;
+  }
+  .ticket {
+    width: 75%;
+    margin: auto;
+    background-position: center;
+    top: 230px;
+    left: 95px;
   }
   .m_chin1 {
     width: 100%;
@@ -277,6 +300,7 @@
   .m_navbar {
     width: 80%;
     height: 90%;
+    display: flex;
     margin: auto;
     padding-top: 8px;
   }
@@ -486,7 +510,7 @@
   .m_movie_none {
     display: none;
   }
-  
+
   /************************m_chin4**********************************/
   .m_chin4 {
     width: 80%;
@@ -510,7 +534,7 @@
     box-shadow: 5px 3px 8px 5px black;
     margin-bottom: 1300px;
   }
-  .swiper-slide{
+  .swiper-slide {
     margin-bottom: 30px;
   }
   #April {
@@ -528,27 +552,427 @@
     height: 230px;
     margin: 15px auto;
   }
-  .month{
+  .month {
     width: 100px;
     height: 30px;
-    font-family: '微軟正黑體';
+    font-family: "微軟正黑體";
     font-size: 16pt;
-    font-weight:900; 
-    display:inline-block;
+    font-weight: 900;
+    display: inline-block;
     text-align: center;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.644);
     margin: 8px 0px 0px 8px;
+  }
+  /************************m_chin6**********************************/
+
+  .m_chin6 {
+    width: 800px;
+    margin: auto;
+    position: relative;
+  }
+  .m_chin6_txtbox1 {
+    width: 700px;
+    height: 502px;
+    border-radius: 2px;
+    background-color: rgb(255, 29, 37, 0.58);
+    position: absolute;
+  }
+  .m_chin6_txtbox {
+    width: 580px;
+    height: 270px;
+    border-radius: 2px;
+    background-color: rgba(153, 153, 153, 0.822);
+    position: absolute;
+    right: 0px;
+    top: 230px;
+  }
+
+  .m_chin7 {
+    width: 800px;
+    margin: auto;
+    position: relative;
+    /* background-color: rgb(0, 4, 255); */
+  }
+  .googlemap {
+    width: 350px;
+    height: 370px;
+
+    left: 15px;
+    top: 0px;
+  }
+  .m_chin7_bus {
+    width: 350px;
+    height: 370px;
+    background-color: rgba(230, 136, 136, 0.788);
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+    top: 380px;
+    left: 250px;
+  }
 }
-/************************m_chin6**********************************/
+@media screen and (max-width: 768px) {
+  .chin_1,
+  .pad_chin_1,
+  .pad_chin_2,
+  .pad_chin2_topbox,
+  .chin_3,
+  .chin_2,
+  .chin2_topbox,
+  .chin_4,
+  .chin_5,
+  .chin_6 {
+    display: none;
+  }
+  .m_chin1,
+  .m_chin2,
+  .m_chin3,
+  .m_chin0,
+  .m_chin4,
+  .m_chin5,
+  .m_chin6,
+  .m_chin7 {
+    display: block;
+  }
+  .chinLOGO {
+    display: block;
+    font-size: 28pt;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    color: blueviolet;
+  }
+  .m_chin0 {
+    width: 100%;
+  }
+  .ticket {
+    width: 75%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    top: -50px;
+    left: 53px;
+  }
+  .m_chin1 {
+    width: 100%;
+    height: 50px;
+    padding-top: 3px;
+    background-color: rgba(0, 0, 0, 0.267);
+  }
+  .m_navbar {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    margin: auto;
+    padding-top: 5px;
+  }
+  .m_menu {
+    width: 10%;
+    height: 80%;
+    position: relative;
+    border-radius: 3px;
+    /* box-shadow: 0px 0px 2px 2px rgba(102, 102, 102, 0.192); */
+    /* background-color: rgba(255, 255, 255, 0.068); */
+  }
+  .line {
+    width: 100%;
+    margin-left: 3px;
+    position: absolute;
+    border-radius: 2px;
+    border: 2px solid rgb(211, 156, 216);
+    box-shadow: 0px 0px 1px 1px rgba(56, 53, 53, 0.226);
+  }
+  #line1 {
+    top: 0%;
+  }
+  #line2 {
+    top: 45%;
+  }
+  #line3 {
+    top: calc(100% - 4px);
+  }
 
+  @keyframes line1_ani {
+    0% {
+      top: 0%;
+    }
+    70% {
+      top: calc(50% - 2px);
+      transform: rotate(0deg) scale(1, 1);
+    }
+    100% {
+      top: 50%;
+      transform: rotate(45deg) scale(1.2, 1.3);
+    }
+  }
 
+  @keyframes line2_ani {
+    70% {
+      top: 50%;
+      opacity: 1;
+    }
+    100% {
+      top: 50%;
+      opacity: 0;
+    }
+  }
 
+  @keyframes line3_ani {
+    0% {
+      top: calc(100% - 4px);
+    }
+    70% {
+      top: calc(50% - 2px);
+      transform: rotate(0deg) scale(1, 1);
+    }
+    100% {
+      top: 50%;
+      transform: rotate(-45deg) scale(1.2, 1.3);
+    }
+  }
+  .line1_ani {
+    animation: line1_ani 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .line2_ani {
+    animation: line2_ani 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .line3_ani {
+    animation: line3_ani 0.3s;
+    animation-fill-mode: forwards;
+  }
+  /*------------------------------------------------*/
+  .m_menu_link {
+    position: absolute;
+    top: 150%;
+    background-color: #f54b17a9;
+    border-radius: 3px;
+    display: none;
+  }
+  .m_link_all {
+    display: flex;
+  }
+  .m_link {
+    width: 70px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+  }
+  .m_acolor {
+    font-family: "微軟正黑體";
+    color: rgba(255, 255, 255, 0.541);
+    font-size: 10pt;
+    text-shadow: 1.5px 1.5px #333;
+    font-weight: 900;
+  }
 
+  .m_menu_link_block {
+    display: block;
+  }
+  .m_menu_link_none {
+    display: none;
+  }
+  /*-------------------------------------------------*/
+  .m_chin2 {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+  }
+  .m_chin2_vip {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    border-radius: 0.4rem;
+    background-image: url(../img/baneer.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /********************************/
+  .m_chin3 {
+    width: 80%;
+    /* height: 827px; */
+    margin: auto;
+    padding: 5px;
+  }
+  .m_chin3_topbox {
+    width: 78%;
+    padding: 3px 5px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    background-color: #666;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .chin3_text {
+    height: 30px;
+    font-family: "微軟正黑體";
+    font-size: 16pt;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 2px;
+    margin: 0px 5px;
+  }
+  /*******************************************************/
+  .m_movie {
+    /*方格設定*/
+    width: calc(100% / 4 - 3px);
+    height: 242.2px;
+    background-color: rgba(32, 128, 128, 0.5);
+    border: 3px ridge rgba(71, 71, 71, 0.842);
+    border-radius: 4px;
+    margin: 0px 3px 5px 0px;
+    float: left;
+    text-align: center;
+  }
+  .m_movie_all1 {
+    /*電影第一頁面*/
+    width: 100%;
+  }
+  .m_movie_all2 {
+    /*電影第二頁面*/
+    width: 100%;
+  }
+  .Grading_all {
+    /*分級圖標設定*/
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    float: left;
+    margin: 3px 5px 3px 3px;
+  }
+  .text {
+    /*電影標題設定*/
+    width: calc(100% - 20px - 15px);
+    float: left;
+    text-indent: 2px;
+    /* text-align: center; */
+    color: white;
+    margin: auto;
+    font-size: 10pt;
+  }
+  .movie_time {
+    font-family: "微軟正黑體";
+    font-size: 8pt;
+    font-weight: 900;
+    color: white;
+    line-height: 12pt;
+    text-align: center;
+    margin: auto;
+  }
+  .movie_time2 {
+    font-size: 7pt;
+    color: white;
+    text-align: center;
+  }
+  .m_movie_block {
+    display: block;
+  }
+  .m_movie_none {
+    display: none;
+  }
 
+  /************************m_chin4**********************************/
+  .m_chin4 {
+    width: 80%;
+    margin: auto;
+  }
+  .m_chin4_ad {
+    width: 100%;
+    height: 560px;
+    background-image: url(../img/visacard-05.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 8px;
+    opacity: 0.8;
+  }
+  /************************m_chin5**********************************/
+  .m_chin5 {
+    width: 80%;
+    margin: auto;
+  }
+  .introduction {
+    box-shadow: 5px 3px 8px 5px black;
+    margin-bottom: 1300px;
+  }
+  .swiper-slide {
+    margin-bottom: 30px;
+  }
+  #April {
+    width: 100%;
+    height: 230px;
+    margin: 15px auto;
+  }
+  #May {
+    width: 100%;
+    height: 230px;
+    margin: 15px auto;
+  }
+  #June {
+    width: 100%;
+    height: 230px;
+    margin: 15px auto;
+  }
+  .month {
+    width: 100px;
+    height: 30px;
+    font-family: "微軟正黑體";
+    font-size: 16pt;
+    font-weight: 900;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.644);
+    margin: 8px 0px 0px 8px;
+  }
+  /************************m_chin6**********************************/
 
+  .m_chin6 {
+    width: 800px;
+    margin: auto;
+    position: relative;
+  }
+  .m_chin6_txtbox1 {
+    width: 700px;
+    height: 502px;
+    border-radius: 2px;
+    background-color: rgb(255, 29, 37, 0.58);
+    position: absolute;
+  }
+  .m_chin6_txtbox {
+    width: 580px;
+    height: 270px;
+    border-radius: 2px;
+    background-color: rgba(153, 153, 153, 0.822);
+    position: absolute;
+    right: 0px;
+    top: 230px;
+  }
 
+  .m_chin7 {
+    width: 800px;
+    margin: auto;
+    position: relative;
+    /* background-color: rgb(0, 4, 255); */
+  }
+  .googlemap {
+    width: 350px;
+    height: 370px;
 
-
-
+    left: 15px;
+    top: 0px;
+  }
+  .m_chin7_bus {
+    width: 350px;
+    height: 370px;
+    background-color: rgba(230, 136, 136, 0.788);
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+    top: 380px;
+    left: 250px;
+  }
 }

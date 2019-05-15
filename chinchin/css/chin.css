@@ -18,7 +18,9 @@ body{
 .pad_chin_1,
 .pad_chin_2,
 .pad_chin2_topbox,
-.m_chin1,.m_chin2,.m_chin3
+.m_chin1,.m_chin2,.m_chin3,
+.m_chin0,.m_chin4,.m_chin5,
+.m_chin6,.m_chin7
 {
    display: none;
 }
