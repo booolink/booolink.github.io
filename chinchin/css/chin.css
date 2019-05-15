@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 5622px;
+    /* height: 5622px; */
     background-color: #2c3b8c;
     /* background-image: url(../img/bgc1-1-02.jpg); */
     /* background-position: center; */
@@ -17,7 +17,8 @@ body{
 /* ---------------------^環境設定^------------------------------ */
 .pad_chin_1,
 .pad_chin_2,
-.pad_chin2_topbox
+.pad_chin2_topbox,
+.m_chin1,.m_chin2,.m_chin3
 {
    display: none;
 }
