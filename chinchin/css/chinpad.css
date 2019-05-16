@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 @media screen and (max-width: 1250px) {
@@ -991,7 +991,7 @@
     left: 255px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .chin_1,
   .pad_chin_1,
   .pad_chin_2,
