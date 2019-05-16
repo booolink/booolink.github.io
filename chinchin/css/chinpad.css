@@ -856,7 +856,7 @@
     font-size: 2pt;
   }
   .img_all{/*電影post設定*/
-    width: 100px;
+    width: 108px;
     height: 158px;
     background-size: cover;
 }
@@ -888,10 +888,11 @@
   }
   .m_chin4_ad {
     width: 100%;
-    height: 560px;
+    height: 430px;
     background-image: url(../img/visacard-05.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: contain;
     border-radius: 8px;
     opacity: 0.8;
   }
@@ -907,19 +908,27 @@
   .swiper-slide {
     margin-bottom: 30px;
   }
+  .int_img{
+    width: 90px;
+    height: 120px;
+    margin: 0;
+  }
+  .swiper-slide{
+    width: 150px;
+  }
   #April {
     width: 100%;
-    height: 230px;
+    height: 200px;
     margin: 15px auto;
   }
   #May {
     width: 100%;
-    height: 230px;
+    height: 200px;
     margin: 15px auto;
   }
   #June {
     width: 100%;
-    height: 230px;
+    height: 200px;
     margin: 15px auto;
   }
   .month {
@@ -966,19 +975,18 @@
   }
   .googlemap {
     width: 350px;
-    height: 370px;
-
+    height: 300px;
     left: 15px;
     top: 0px;
   }
   .m_chin7_bus {
     width: 350px;
-    height: 370px;
+    height: 300px;
     background-color: rgba(230, 136, 136, 0.788);
     position: absolute;
     border-radius: 3px;
     box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
-    top: 380px;
-    left: 250px;
+    top: 350px;
+    left: 15px;
   }
 }
