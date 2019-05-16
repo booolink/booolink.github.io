@@ -1327,7 +1327,7 @@
   /************************m_chin6**********************************/
 
   .m_chin6 {
-    
+    width: 100%;
     margin: auto;
     position: relative;
   }
@@ -1349,7 +1349,7 @@
   }
 
   .m_chin7 {
-    width: 800px;
+    width: 100%;
     margin: auto;
     position: relative;
     /* background-color: rgb(0, 4, 255); */
