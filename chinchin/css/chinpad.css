@@ -1027,6 +1027,7 @@
     height: 50px;
     padding-top: 3px;
     background-color: rgba(0, 0, 0, 0.267);
+    position: fixed;
   }
   .m_navbar {
     width: 80%;
@@ -1146,10 +1147,15 @@
     display: none;
   }
   /*-------------------------------------------------*/
+  .m_hoot{/*空白下推*/
+    width: 100%;
+    height: 51px;
+  }
   .m_chin2 {
     width: 100%;
     height: 75px;
     margin: auto;
+    
   }
   .m_chin2_vip {
     width: 100%;
@@ -1158,7 +1164,8 @@
     background-image: url(../img/baneer.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;  
+    background-position: center; 
+  
   }
   /********************************/
   .m_chin3 {
