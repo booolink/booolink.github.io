@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 95%;
+    height: 54px;
+    padding: 10px;
+    margin: auto;
+}
+.navimg{
+    width: 108px;
+    height: 37px;
+    background-image: url('../img/RE1Mu3b.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: left;
+}
+.navleft{
+  width: 500px;
+  font-size: 14px;
+  padding: 0px 1px;
+  float: left;
+  margin-left: 137px;
+}
+.navright{
+    font-size: 14px;
+    padding: 0px 1px;
+  }
+.navli{
+    color: black;
+    padding: 8px 8px ;
+    float: right;
+}
+.mycenter{
+   background-size: contain;
+   background-position: center;
+   margin: auto;
+}
+.w-90{
+    width: 90% ;
+}
+.w-95{
+    width: 94% ;
+}
+.vw-90{
+    width: 90vw;
+    height: 33vw;
+}
+.mymargin50{
+    margin-top: 50px ;
+}
+.card-title{
+    font-family: '微軟正黑體';
+    font-weight: 900;
+}
+.fontwiwi{
+    font-family: '微軟正黑體';
+}
