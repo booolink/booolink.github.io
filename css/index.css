@@ -347,7 +347,7 @@ li {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
   .personal {
     -webkit-transform: scale(0.7) translate(-22%);
             transform: scale(0.7) translate(-22%);
