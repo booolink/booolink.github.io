@@ -1,27 +1,6 @@
 @import "variable";
 
-* {
-  box-sizing: border-box;
-  // outline: 1px solid red;
-  margin: 0;
-  padding: 0;
-}
-body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
-a {
-  text-decoration: none;
-  color: #999999;
-}
-li {
-  font-family: $fonttype;
-}
-.main {
-  margin: auto;
-}
-
+//welcome
 .container {
   width: 100%;
   height: 100vh;
@@ -31,24 +10,26 @@ li {
   & li {
     list-style: none;
   }
-
   & h1 {
     font-size: 5em;
     color: #999999;
     text-align: center;
     line-height: 450px;
   }
+  //topbar
   & .menubar {
     width: 100%;
     height: 60px;
     padding: 10px 15px;
     background-color: $menubarcolor;
     box-shadow: 1px 1px 2px #222;
+    //外面不旋轉  固定BOX
     & .menucanten {
       width: 45px;
       height: 100%;
       position: relative;
       float: right;
+      //點擊選轉menu
       & .menu {
         width: 100%;
         height: 100%;
@@ -71,12 +52,14 @@ li {
           bottom: 8px;
           border-radius: 2px;
         }
+        //動畫class
         &.menuani {
           animation: menuani 1s;
           animation-fill-mode: forwards;
         }
       }
     }
+    //下拉選單盒子
     & .menubox {
       width: 180px;
       height: 200px;
@@ -88,6 +71,7 @@ li {
       right: 0;
       top: 53px;
       z-index: 999;
+      //下拉選單內容
       & .menulist {
         height: calc(100% / 5);
         display: block;
@@ -99,6 +83,7 @@ li {
     }
   }
 }
+//底圖 :before
 .bgccolor {
   position: relative;
   width: 100%;
@@ -115,6 +100,7 @@ li {
     top: 0;
   }
 }
+//照片& 基本資料
 .personal {
   min-width: 590px;
   width: 60%;
@@ -123,14 +109,17 @@ li {
   position: relative;
   line-height: 2em;
   font-size: $fontsize12;
+  //照片
   & .pic {
     width: 300px;
     height: 250px;
     background: url("../img/pro-03.png") center center no-repeat;
     background-size: cover;
   }
+  //基本資料
   & .information {
     width: calc(100% - 300px);
+    //姓名
     & .infor_top {
       & span {
         font-family: $fonttype;
@@ -147,6 +136,7 @@ li {
         color: $fontpcolor;
       }
     }
+    //學歷
     & .infor_sub {
       width: 100%;
       margin: 20px;
@@ -172,7 +162,7 @@ li {
     }
   }
 }
-
+//經歷
 .experience {
   width: 100%;
   margin: 100px auto 0px;
@@ -186,6 +176,7 @@ li {
     font-size: $fontsize20;
     color: $fontpcolor;
   }
+  //經歷 文字
   & .Exp {
     width: 540px;
     margin: auto;
@@ -209,12 +200,12 @@ li {
     }
   }
 }
-
+//自介
 .introduction {
   position: relative;
   width: 95%;
   margin: 100px auto 0px;
-
+  // 文字
   & .intro_text {
     max-width: 577px;
     width: 80%;
@@ -223,7 +214,7 @@ li {
     font-size: $fontsize14;
   }
 }
-
+//技能
 .skills {
   width: 60%;
   margin: 72px auto 0px auto;
