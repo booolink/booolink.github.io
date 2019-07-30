@@ -25,9 +25,9 @@ li {
 .container {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/bgc.JPG");
+  background: url("../img/bgc.JPG") no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   & li {
     list-style: none;
   }
@@ -79,7 +79,7 @@ li {
     }
     & .menubox {
       width: 180px;
-      height: 180px;
+      height: 200px;
       position: absolute;
       display: none;
       background-color: $menuboxcolor;
@@ -89,7 +89,7 @@ li {
       top: 53px;
       z-index: 999;
       & .menulist {
-        height: calc(100% / 4);
+        height: calc(100% / 5);
         display: block;
         text-align: center;
         font-size: $fontsize20;
@@ -103,9 +103,9 @@ li {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-top:100px;
-  &:after{
-    content: '';
+  padding-top: 100px;
+  &:after {
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
@@ -175,7 +175,7 @@ li {
 
 .experience {
   width: 100%;
-  margin: 100px auto 0px ;
+  margin: 100px auto 0px;
 
   & li {
     position: relative;
@@ -186,27 +186,26 @@ li {
     font-size: $fontsize20;
     color: $fontpcolor;
   }
-  > .Exp {
-    min-width: 380px;
-    width: 40%;
+  & .Exp {
+    width: 540px;
     margin: auto;
+    position: relative;
     & .exp_box {
-      position: relative;
       width: 80%;
       margin: auto;
-      &:after {
-        content: "";
-        background-color: #333;
-        position: absolute;
-        width: 3px;
-        height: 250px;
-        top: 18px;
-        left: -13px;
-        z-index: -1;
-      }
       & .exp_infor {
         margin-top: 24px;
       }
+    }
+    &:after {
+      content: "";
+      background-color: #333;
+      position: absolute;
+      width: 3px;
+      height: 260px;
+      top: 18%;
+      left: 7.8%;
+      z-index: -1;
     }
   }
 }
@@ -217,8 +216,9 @@ li {
   margin: 100px auto 0px;
 
   & .intro_text {
-    width: 60%;
-    margin:  auto ;
+    max-width: 577px;
+    width: 80%;
+    margin: auto;
     font-family: $fonttype;
     font-size: $fontsize14;
   }
@@ -286,10 +286,20 @@ li {
 }
 
 @media screen and (max-width: 499px) {
-  .personal{
-    transform: scale(0.7) translate(-22%)
+  .personal {
+    transform: scale(0.7) translate(-22%);
   }
-  .information{
-    transform: translate(-18%)
+  .information {
+    transform: translate(-18%);
+  }
+  .experience {
+    width: 100%;
+    .Exp {
+      width: 100%;
+      &:after {
+        top: 18%;
+        left: 7%;
+      }
+    }
   }
 }
