@@ -10,6 +10,7 @@ $(document).ready(function () {
         $('.container h1').fadeToggle(2000, function () {
             back();
         })
+
     }
     back();
 
@@ -17,13 +18,17 @@ $(document).ready(function () {
         $('.menu').toggleClass('menuani')
     })
 
+    $(window).scroll(function () {
+        var srco = $(this).scrollTop()
+        function Top0() {
+            $('.personal').animate({ 'top': '0px' }, 2000);
+        }
+        if (srco >= 300) {
+            Top0();
+        }
+    })
+
 })
-
-
-
-
-
-
 
 
 
