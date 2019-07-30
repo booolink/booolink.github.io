@@ -17,18 +17,6 @@ $(document).ready(function () {
         $('.menu').toggleClass('menuani')
     })
 
-    $(window).resize(function () {
-
-        var Docwidth = $('#box1').width()
-
-        var Docheight = $(document).height()
-        var box1height = $('#box1').height()
-
-        $('.bgccolor').height(Docheight - box1height)
-        $('.bgccolor').width(Docwidth)
-
-    })
-
 })
 
 
