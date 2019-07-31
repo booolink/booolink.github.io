@@ -299,6 +299,7 @@ li {
 .skills .skills_3 {
   width: 100%;
   background-image: url("../img/scsslogo.png");
+  background-size: 140%;
 }
 
 .skills .skills_4 {
