@@ -281,7 +281,18 @@
     transform: scale(0.7) translate(-22%);
   }
   .information {
-    transform: translate(-18%);
+    transform: translate(-20%);
+    & .infor_sub {
+      & span {
+        font-size: $fontsize14;
+      }
+      > p {
+        width: 110%;
+        word-spacing: 5px;
+        font-size: $fontsize14;
+        transform: translate(-3%);
+      }
+    }
   }
   .experience {
     width: 100%;

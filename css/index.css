@@ -2,6 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid red;
   margin: 0;
   padding: 0;
 }
@@ -353,8 +354,18 @@ li {
             transform: scale(0.7) translate(-22%);
   }
   .information {
-    -webkit-transform: translate(-18%);
-            transform: translate(-18%);
+    -webkit-transform: translate(-20%);
+            transform: translate(-20%);
+  }
+  .information .infor_sub span {
+    font-size: 1.2em;
+  }
+  .information .infor_sub > p {
+    width: 110%;
+    word-spacing: 5px;
+    font-size: 1.2em;
+    -webkit-transform: translate(-3%);
+            transform: translate(-3%);
   }
   .experience {
     width: 100%;
