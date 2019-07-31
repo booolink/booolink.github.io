@@ -10,23 +10,24 @@ $fontsize12: 1em;
 $fontsize10: 0.8em;
 
 * {
-    box-sizing: border-box;
-    // outline: 1px solid red;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  a {
-    text-decoration: none;
-    color: #999999;
-  }
-  li {
-    font-family: $fonttype;
-  }
-  .main {
-    margin: auto;
-  }
+  box-sizing: border-box;
+  // outline: 1px solid red;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #999999;
+}
+li {
+  font-family: $fonttype;
+
+}
+.main {
+  margin: auto;
+}
