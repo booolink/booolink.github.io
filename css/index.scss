@@ -1,9 +1,5 @@
 @import "variable";
 
-
-
-
-
 //welcome
 .container {
   width: 100%;
@@ -13,7 +9,6 @@
   background-attachment: fixed;
   & li {
     list-style: none;
-    
   }
   & h1 {
     font-size: 5em;
@@ -192,16 +187,16 @@
       & .exp_infor {
         margin-top: 24px;
       }
-          &:after {
-            content: "";
-            background-color: #333;
-            position: absolute;
-            width: 3px;
-            height: 260px;
-            top: 18%;
-            left: 7.8%;
-            z-index: -1;
-          }
+    }
+    &:after {
+      content: "";
+      background-color: #333;
+      position: absolute;
+      width: 3px;
+      height: 260px;
+      top: 18%;
+      left: 7.8%;
+      z-index: -1;
     }
   }
 }
@@ -223,7 +218,6 @@
 .skills {
   width: 60%;
   margin: 72px auto 0px auto;
-  
   & .skills_top {
     width: 100%;
     height: 100px;
@@ -284,11 +278,10 @@
 
 @media screen and (max-width: 499px) {
   .personal {
-    width: 400px ;
     transform: scale(0.7) translate(-22%);
   }
   .information {
-    transform: translate(-25%);
+    transform: translate(-18%);
   }
   .experience {
     width: 100%;
