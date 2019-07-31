@@ -194,7 +194,7 @@ li {
 }
 
 .personal .information .infor_sub > p {
-  word-spacing: 10px;
+  word-spacing: 6px;
   font-family: "微軟正黑體";
   font-size: 1em;
   font-weight: 500;
@@ -239,7 +239,7 @@ li {
   width: 3px;
   height: 260px;
   top: 18%;
-  left: 7.8%;
+  left: 7.3%;
   z-index: -1;
 }
 
