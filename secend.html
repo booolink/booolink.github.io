@@ -9,16 +9,52 @@
   </head>
   <body>
     <div id="page2" class="main">
+      <input type="checkbox" name="" id="james" />
       <div class="menu_box">
         <ul class="menu_list">
+          <label for="james" class="pp"></label>
           <li><a href="index.html">個人履歷</a></li>
-          <li class="menu_1">作品集</li>
-          <li class="menu_2">123公司</li>
-          <li class="menu_3">456</li>
-          <li class="menu_3">456</li>
-          <li class="menu_3">456</li>
+          <li class="menu_1"><a href="javascript:;">作品集</a></li>
+          <li class="menu_2"><a href="javascript:;" type='password'>123公司</a></li>
+          <li class="menu_3"><a href="javascript:;">456</a></li>
+          <li class="menu_3"><a href="javascript:;">456</a></li>
+          <li class="menu_3"><a href="javascript:;">456</a></li>
+        </ul>
+      </div>
+      <div id="one" class="one">
+        <ul class="total_box">
+          <li class="box box_1"><a href=""></a></li>
+          <li class="box box_2"></li>
+          <li class="box box_3"></li>
+          <li class="box box_4"></li>
+          <li class="box box_5"></li>
+          <li class="box box_6"></li>
+          <li class="box box_7"></li>
+          <li class="box box_8"></li>
+          <li class="box box_9"></li>
+          <li class="box box_10"></li>
         </ul>
       </div>
     </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js'></script>
+    <script>
+      ;(function($) {
+        $(".menu_2").click(function() {
+          password();
+        });
+        function password() {
+          var pass = prompt("請輸入訪問密碼", "123");
+          var one = document.querySelector("#one");
+          if (pass == "123") {
+            one.style.display = "block";
+         
+          } else if (pass != null && pass != "") {
+            alert("錯誤");
+            one.style.display = "none";
+            location.reload();
+          }
+        }
+      })($);
+    </script>
   </body>
 </html>

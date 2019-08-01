@@ -19,6 +19,8 @@ a {
 
 li {
   font-family: "微軟正黑體";
+  text-decoration: none;
+  list-style: none;
 }
 
 .main {

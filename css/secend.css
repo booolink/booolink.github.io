@@ -19,6 +19,8 @@ a {
 
 li {
   font-family: "微軟正黑體";
+  text-decoration: none;
+  list-style: none;
 }
 
 .main {
@@ -26,77 +28,134 @@ li {
 }
 
 body {
-  background: #ed5858;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bgc.JPG) center top no-repeat;
+  background-size: 100%;
+  position: absolute;
   overflow: hidden;
+  z-index: -999;
 }
 
 .main {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
-.main:before {
-  content: "";
-  background: #66666680;
-  position: absolute;
-  width: 100%;
-  height: 10%;
+.main #james {
+  display: none;
 }
 
-.menu_box {
-  width: 100%;
+.main .menu_box {
+  width: 300px;
   height: 100vh;
+  padding-left: 10px;
   background: #302525;
+  position: relative;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 999;
+  top: 0;
 }
 
-.menu_box:target {
-  -webkit-animation: menu_box 1s;
-          animation: menu_box 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.menu_box li {
-  width: 250px;
+.main .menu_box li {
+  width: 150px;
   height: 50px;
   color: #fff;
   font-weight: bold;
   line-height: 2em;
-  padding-left: 50px;
+  padding-left: 10px;
   overflow: hidden;
   text-decoration: none;
   display: block;
   font-size: 1.5em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.menu_box li:hover {
-  border-bottom: 1px solid #ff7bac;
+.main .menu_box li:hover {
+  background: #ed585890;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  padding-left: 20px;
+  width: 100%;
 }
 
-.menu_box .menu_list {
+.main .menu_box .pp {
+  background: #66666680;
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: 78%;
+  top: 0;
+  cursor: pointer;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .menu_box .menu_list {
   width: 100%;
   height: 100%;
   margin: auto;
   padding-top: 66px;
 }
 
-@-webkit-keyframes menu_box {
-  0% {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
-  }
-  100% {
-    -webkit-transform: translate(-90%);
-            transform: translate(-90%);
-  }
+.main #james:checked + .menu_box .menu_list .pp {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+  left: 78%;
 }
 
-@keyframes menu_box {
-  0% {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
-  }
-  100% {
-    -webkit-transform: translate(-90%);
-            transform: translate(-90%);
-  }
+.main #james:checked ~ .menu_box {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+}
+
+.main #james:checked ~ .one {
+  width: calc(100% - 300px);
+  left: 300px;
+}
+
+.main .one {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: red;
+  padding-top: 66px;
+  top: 0;
+  left: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: -10;
+  display: none;
+}
+
+.main .one > ul.total_box {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding: 5px;
+  background: #894040;
+}
+
+.main .one li.box {
+  width: calc(100% / 5);
+  height: 100px;
+  margin: 5px 1px;
+  display: block;
+  background: #fff;
 }
