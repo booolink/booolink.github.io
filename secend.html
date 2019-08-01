@@ -1,60 +1,82 @@
 <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>作品集</title>
-    <link rel="stylesheet" href="css/secend.css" />
-  </head>
-  <body>
-    <div id="page2" class="main">
-      <input type="checkbox" name="" id="james" />
-      <div class="menu_box">
-        <ul class="menu_list">
-          <label for="james" class="pp"></label>
-          <li><a href="index.html">個人履歷</a></li>
-          <li class="menu_1"><a href="javascript:;">作品集</a></li>
-          <li class="menu_2"><a href="javascript:;">123公司</a></li>
-          <li class="menu_3"><a href="javascript:;">456</a></li>
-          <li class="menu_3"><a href="javascript:;">456</a></li>
-          <li class="menu_3"><a href="javascript:;">456</a></li>
-        </ul>
-      </div>
-      <div id="one" class="one">
-        <ul class="total_box">
-          <li class="box box_1"><a href="https://booolink.github.io/works/20190724_SPORT_james/index.html">123456</a></li>
-          <li class="box box_2"></li>
-          <li class="box box_3"></li>
-          <li class="box box_4"></li>
-          <li class="box box_5"></li>
-          <li class="box box_6"></li>
-          <li class="box box_7"></li>
-          <li class="box box_8"></li>
-          <li class="box box_9"></li>
-          <li class="box box_10"></li>
-        </ul>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>作品集</title>
+  <link rel="stylesheet" href="css/secend.css" />
+</head>
+
+<body>
+  <div id="page2" class="main">
+    <input type="checkbox" name="" id="james" />
+    <div class="menu_box">
+      <ul class="menu_list">
+        <label for="james" class="pp"></label>
+        <li><a href="index.html">個人履歷</a></li>
+        <li class="menu_1"><a href="javascript:;">作品集</a></li>
+        <li class="menu_2"><a href="javascript:;">公司切版</a></li>
+        <li class="menu_3"><a href="javascript:;">建置中</a></li>
+        <li class="menu_3"><a href="javascript:;">建置中</a></li>
+        <li class="menu_3"><a href="javascript:;">建置中</a></li>
+      </ul>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js'></script>
-    <script>
-      ;(function($) {
-        $(".menu_2").click(function() {
-          password();
-        });
-        function password() {
-          var pass = prompt("請輸入訪問密碼", "123");
-          var one = document.querySelector("#one");
-          if (pass == "123") {
-            one.style.display = "block";
-         
-          } else if (pass != null && pass != "") {
-            alert("錯誤");
-            one.style.display = "none";
-            location.reload();
-          }
+    <div id="one" class="one">
+      <ul class="total_box">
+        <li class="box box_1">
+          <a href="https://booolink.github.io/works/20190724_SPORT_james/index.html"></a>
+        </li>
+        <li class="box box_2">
+          <a href="https://booolink.github.io/works/20190725_goldfunnel_james/index.html"></a>
+        </li>
+        <li class="box box_3">
+          <a href="https://booolink.github.io/works/20190725_sport795_james/index.html"></a>
+        </li>
+        <li class="box box_4">
+          <a href="https://booolink.github.io/works/20190727_88Game_james/index.html"></a>
+        </li>
+        <li class="box box_5">
+          <a href="https://booolink.github.io/works/20190729_FootBasketball_james/index.html"></a>
+        </li>
+        <li class="box box_6">
+          <a href="https://booolink.github.io/works/20190729_Jinsha_james/index.html"></a>
+        </li>
+        <li class="box box_7">
+          <a href="https://booolink.github.io/works/20190729_goldfunnel-2_james/index.html"></a>
+        </li>
+        <li class="box box_8">
+          <a href="https://booolink.github.io/works/20190724_SPORT_james/index.html"></a>
+        </li>
+        <li class="box box_9">
+          <a href="https://booolink.github.io/works/20190724_SPORT_james/index.html"></a>
+        </li>
+        <li class="box box_10">
+          <a href="https://booolink.github.io/works/20190724_SPORT_james/index.html"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+  <script>
+    (function ($) {
+      $(".menu_2").click(function () {
+        password();
+      });
+      function password() {
+        var pass = prompt("請輸入訪問密碼", "");
+        var one = document.querySelector("#one");
+        if (pass == "4444555a") {
+          one.style.display = "block";
+        } else if (pass != null && pass != "") {
+          alert("錯誤");
+          one.style.display = "none";
+          location.reload();
         }
-      })($);
-    </script>
-  </body>
+      }
+    })($);
+  </script>
+</body>
+
 </html>
