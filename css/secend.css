@@ -24,6 +24,8 @@ li {
 
 .main {
   margin: auto;
+  font-family: "微軟正黑體";
+  font-weight: bolder;
 }
 
 body {
@@ -193,8 +195,13 @@ body {
   width: 100%;
   height: 80%;
   display: block;
-  background: #5cc3c9;
+  background: #a35cc9;
   text-align: center;
+}
+
+.main .one li:hover {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
 }
 
 .main .two {
@@ -240,11 +247,16 @@ body {
   padding: 5px;
 }
 
+.main .two li:hover {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
+
 .main .two a {
   min-width: 100px;
   width: 100%;
   height: 80%;
   display: block;
-  background: #5cc3c9;
+  background: #5c89c9;
   text-align: center;
 }
