@@ -269,6 +269,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
 }
 
 .skills .skills_but {
@@ -280,8 +281,10 @@ li {
 }
 
 .skills .skills_box {
+  max-width: 114px;
   width: clac(100%/4);
   height: 100%;
+  margin: auto;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -325,6 +328,28 @@ li {
 .skills .skills_8 {
   width: 100%;
   background-image: url("../img/js-03.png");
+}
+
+.totop {
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  font-family: '微軟正黑體';
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: red;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 999;
+}
+
+.totop.movie_none {
+  display: none;
+}
+
+.totop a {
+  color: white;
 }
 
 @-webkit-keyframes menuani {
