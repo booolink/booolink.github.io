@@ -5,18 +5,20 @@ body {
   height: 100vh;
   background: url(../img/bgc.JPG) center top no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: absolute;
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: -999;
 }
 .main {
   width: 100%;
   height: 100%;
   position: relative;
-
+  //input checkbox
   #james {
     display: none;
   }
+  // 選單底色
   .menu_box {
     width: 300px;
     height: 100vh;
@@ -27,6 +29,7 @@ body {
     transition: 1s;
     z-index: 999;
     top: 0;
+    //選單總設定
     & li {
       width: 150px;
       height: 50px;
@@ -40,12 +43,14 @@ body {
       font-size: $fontsize20;
       transition: 0.5s;
     }
+    //電腦版滑動效果
     li:hover {
       background: #ed585890;
       transform: translateX(5px);
       padding-left: 20px;
       width: 100%;
     }
+    //方塊
     & .pp {
       background: #66666680;
       position: absolute;
@@ -57,6 +62,7 @@ body {
       transform: translate(100%);
       transition: 1s;
     }
+    //選像清單
     & .menu_list {
       width: 100%;
       height: 100%;
@@ -64,30 +70,32 @@ body {
       padding-top: 66px;
     }
   }
+  //menu 主方塊 左右滑動
   #james:checked + .menu_box .menu_list .pp {
     transform: translate(0%);
     left: 78%;
   }
+  //menu左右滑動
   #james:checked ~ .menu_box {
     transform: translate(0%);
   }
-  #james:checked ~ .one {
+  //公司左右滑動
+  #james:checked ~ .one{
     width: calc(100% - 300px);
     left: 300px;
   }
+  //公司
   .one {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: absolute;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.333);
     padding-top: 66px;
     top: 0;
     left: 0;
     transition: 1s;
-    // z-index: -10;
     display: none;
-    > ul.total_box {
-      //  min-width: 706px;
+    > ul.one_total_box {
       width: 100%;
       height: 100%;
       margin: auto;
@@ -97,20 +105,69 @@ body {
       align-content: flex-start;
       padding: 5px;
     }
-    li {
-      max-width: 80px;
+    & li {
+      max-width: 130px;
+      min-width: 130px;
       width: calc(100% / 5);
-      height: 20%;
+      height: 180px;
       margin: 8px 5px;
       display: block;
       background: #fff;
       pointer-events: auto;
+      border: 2px solid #f34949;
+      text-align: center;
+      padding: 5px;
     }
-    a{
+    & a {
+      min-width: 100px;
+      width: 100%;
+      height: 80%;
+      display: block;
+      background: #5cc3c9;
+      text-align: center;
+    }
+  }
+  // 一般切版
+  .two {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.333);
+    padding-top: 66px;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    display: none;
+    > ul {
       width: 100%;
       height: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      padding: 5px;
+    }
+    & li {
+      max-width: 130px;
+      min-width: 130px;
+      width: calc(100% / 5);
+      height: 180px;
+      margin: 8px 5px;
       display: block;
-      background: #89432e;
+      background: #fff;
+      pointer-events: auto;
+      border: 2px solid #f34949;
+      text-align: center;
+      padding: 5px;
+    }
+    & a {
+      min-width: 100px;
+      width: 100%;
+      height: 80%;
+      display: block;
+      background: #5cc3c9;
+      text-align: center;
     }
   }
 }

@@ -18,56 +18,93 @@
         <li><a href="index.html">個人履歷</a></li>
         <li class="menu_1"><a href="javascript:;">作品集</a></li>
         <li class="menu_2"><a href="javascript:;">公司切版</a></li>
-        <li class="menu_3"><a href="javascript:;">建置中</a></li>
-        <li class="menu_3"><a href="javascript:;">建置中</a></li>
-        <li class="menu_3"><a href="javascript:;">建置中</a></li>
+        <li class="menu_3"><a href="javascript:;">一般切版</a></li>
+        <li class="menu_3"><a href="javascript:;">建置中...</a></li>
+        <li class="menu_3"><a href="javascript:;">建置中...</a></li>
       </ul>
     </div>
     <div id="one" class="one">
-      <ul class="total_box">
-        <li class="box box_1">
+      <ul class="one_total_box">
+        <li class="one_box box_1">
           <a href="https://booolink.github.io/works/20190724_SPORT_james/index.html"></a>
+          <p>2019/07/27</p>
         </li>
-        <li class="box box_2">
+        <li class="one_box box_2">
           <a href="https://booolink.github.io/works/20190725_goldfunnel_james/index.html"></a>
+          <p>2019/07/27</p>
         </li>
-        <li class="box box_3">
+        <li class="one_box box_3">
           <a href="https://booolink.github.io/works/20190725_sport795_james/index.html"></a>
+          <p>2019/07/27</p>
         </li>
-        <li class="box box_4">
+        <li class="one_box box_4">
           <a href="https://booolink.github.io/works/20190727_88Game_james/index.html"></a>
+          <p>2019/07/27</p>
         </li>
-        <li class="box box_5">
+        <li class="one_box box_5">
           <a href="https://booolink.github.io/works/20190729_FootBasketball_james/index.html"></a>
+          <p>2019/07/28</p>
         </li>
-        <li class="box box_6">
+        <li class="one_box box_6">
           <a href="https://booolink.github.io/works/20190729_Jinsha_james/index.html"></a>
+          <p>2019/07/28</p>
         </li>
-        <li class="box box_7">
+        <li class="one_box box_7">
           <a href="https://booolink.github.io/works/20190729_goldfunnel-2_james/index.html"></a>
+          <p>2019/07/28</p>
         </li>
-        <li class="box box_8">
-          <a href="https://booolink.github.io/works/20190724_SPORT_james/index.html"></a>
+        <li class="one_box box_8">
+          <a href="javascript:;"></a>
+          <p>2019/07/24</p>
         </li>
-        <li class="box box_9">
-          <a href="https://booolink.github.io/works/20190724_SPORT_james/index.html"></a>
+        <li class="one_box box_9">
+          <a href="javascript:;"></a>
+          <p>2019/07/24</p>
         </li>
-        <li class="box box_10">
-          <a href="https://booolink.github.io/works/20190724_SPORT_james/index.html"></a>
+        <li class="one_box box_10">
+          <a href="javascript:;"></a>
+          <p>2019/07/24</p>
         </li>
       </ul>
     </div>
+
+    <div id="two" class="two">
+      <ul class="two_total_box">
+        <li class="two_box box_1">
+          <a href="https://booolink.github.io/chinchin/index.html"></a>
+          <p>2019/05/18 專題</p>
+        </li>
+        <li class="two_box box_2">
+          <div class="box2_img"></div>
+          <a href="https://booolink.github.io/micsoft/Bootstrap/index.html"></a>
+          <p>2019/05/27 micsoft</p>
+        </li>
+        <li class="two_box box_3">
+          <a href="https://booolink.github.io/works/20190725_sport795_james/index.html"></a>
+          <p>2019/07/27</p>
+        </li>
+
+        </li>
+      </ul>
+    </div>
+
   </div>
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
   <script>
     (function ($) {
+
+      var one = document.querySelector("#one");
+      var two = document.querySelector("#two");
+
       $(".menu_2").click(function () {
         password();
       });
       function password() {
-        var pass = prompt("請輸入訪問密碼", "");
-        var one = document.querySelector("#one");
-        if (pass == "4444555a") {
+        var pass = prompt("請輸入訪問密碼", "444555a");
+        if (pass == "444555a") {
           one.style.display = "block";
         } else if (pass != null && pass != "") {
           alert("錯誤");
@@ -75,6 +112,24 @@
           location.reload();
         }
       }
+
+      $(".menu_3").click(function () {
+        if (one.style.display == "block") {
+          two.style.display = "block";
+          one.style.display = "none";
+        } else {
+          two.style.display = "block";
+        }
+      })
+
+      $(".menu_2").click(function () {
+        if (two.style.display == "block") {
+          two.style.display = "none";
+        } else {
+          two.style.display == "block";
+        }
+      })
+
     })($);
   </script>
 </body>
