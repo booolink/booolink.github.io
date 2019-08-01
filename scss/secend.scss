@@ -130,6 +130,7 @@ body {
       min-width: 130px;
       width: calc(100% / 5);
       height: 180px;
+      border-radius:5px; 
       margin: 8px 5px;
       display: block;
       background: #fff;
@@ -178,6 +179,7 @@ body {
       height: 180px;
       margin: 8px 5px;
       display: block;
+      border-radius:5px; 
       background: #fff;
       pointer-events: auto;
       border: 2px solid #f34949;
