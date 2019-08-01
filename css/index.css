@@ -215,9 +215,14 @@ li {
 }
 
 .experience h3 {
+  width: 40%;
+  padding-left: 25px;
   font-family: "微軟正黑體";
   font-size: 1.5em;
   color: #4d4d4d;
+  background-color: #af474793;
+  -webkit-clip-path: polygon(12% 0%, 100% 0%, 89% 100%, 0% 100%);
+          clip-path: polygon(12% 0%, 100% 0%, 89% 100%, 0% 100%);
 }
 
 .experience .Exp {
@@ -336,7 +341,7 @@ li {
   width: 80px;
   height: 50px;
   text-align: center;
-  font-family: '微軟正黑體';
+  font-family: "微軟正黑體";
   font-size: 30px;
   border-radius: 5px;
   background-color: red;

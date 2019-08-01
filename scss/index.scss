@@ -172,9 +172,13 @@
     list-style-image: url("../img/point.1-02.png");
   }
   & h3 {
+    width: 40%;
+    padding-left: 25px;
     font-family: $fonttype;
     font-size: $fontsize20;
     color: $fontpcolor;
+    background-color: #af474793;
+    clip-path: polygon(12% 0%, 100% 0%, 89% 100%, 0% 100%);
   }
   //經歷 文字
   & .Exp {
@@ -273,23 +277,23 @@
   }
 }
 //回頂部
-.totop{
+.totop {
   width: 80px;
   height: 50px;
   text-align: center;
-  font-family: '微軟正黑體';
+  font-family: "微軟正黑體";
   font-size: 30px;
-  border-radius:5px; 
+  border-radius: 5px;
   background-color: red;
   position: fixed;
   bottom: 20px;
   right: 50px;
   z-index: 999;
-  &.movie_none{
+  &.movie_none {
     display: none;
   }
-  & a{
-    color:white;
+  & a {
+    color: white;
   }
 }
 @keyframes menuani {
