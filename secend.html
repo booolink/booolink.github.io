@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>作品集</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
   <link rel="stylesheet" href="css/secend.css" />
 </head>
 
@@ -92,46 +93,8 @@
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
-  <script>
-    (function ($) {
 
-      var one = document.querySelector("#one");
-      var two = document.querySelector("#two");
-
-      $(".menu_2").click(function () {
-        password();
-      });
-      function password() {
-        var pass = prompt("請輸入訪問密碼", "444555a");
-        if (pass == "444555a") {
-          one.style.display = "block";
-        } else if (pass != null && pass != "") {
-          alert("錯誤");
-          one.style.display = "none";
-          location.reload();
-        }
-      }
-
-      $(".menu_3").click(function () {
-        if (one.style.display == "block") {
-          two.style.display = "block";
-          one.style.display = "none";
-        } else {
-          two.style.display = "block";
-        }
-      })
-
-      $(".menu_2").click(function () {
-        if (two.style.display == "block") {
-          two.style.display = "none";
-        } else {
-          two.style.display == "block";
-        }
-      })
-
-    })($);
-  </script>
+  <script src="js/secend.js"></script>
 </body>
 
 </html>
