@@ -10,7 +10,7 @@ $(".menu_2").click(function () {
 });
 
 function password() {
-    var pass = prompt("請輸入訪問密碼", "55554444");
+    var pass = prompt("請輸入訪問密碼", "");
     if (pass == "55554444") {
         one.style.display = "block";
     } else if (pass != null && pass != "") {
