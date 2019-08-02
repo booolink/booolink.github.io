@@ -50,11 +50,13 @@ body {
 }
 
 .main .menu_box {
-  width: 300px;
+  width: 290px;
   height: 100vh;
   padding-left: 10px;
-  background: #302525ba;
+  background: #716f6f28;
   position: relative;
+  -webkit-box-shadow: 0px 2px 20px #fff;
+          box-shadow: 0px 2px 20px #fff;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
   -webkit-transition: 0.5s;
@@ -80,6 +82,8 @@ body {
 
 .main .menu_box li:hover {
   background: #ed58587b;
+  -webkit-box-shadow: 2px 5px 5px  #000000c2;
+          box-shadow: 2px 5px 5px  #000000c2;
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
   padding-left: 20px;
@@ -274,6 +278,8 @@ body {
   min-height: 100%;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.333);
+  -webkit-box-shadow: -5px 0px 15px rgba(251, 96, 96, 0.333);
+          box-shadow: -5px 0px 15px rgba(251, 96, 96, 0.333);
   padding-top: 66px;
   top: 0;
   left: 0;
