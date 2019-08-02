@@ -23,7 +23,7 @@ body {
     width: 300px;
     height: 100vh;
     padding-left: 10px;
-    background: #302525;
+    background: #302525ba;
     position: relative;
     transform: translate(-100%);
     transition: 0.5s;
@@ -45,10 +45,11 @@ body {
     }
     //電腦版滑動效果
     li:hover {
-      background: #ed585890;
+      background: #ed58587b;
       transform: translateX(5px);
       padding-left: 20px;
       width: 100%;
+      border-radius:5px; 
     }
     //方塊
     & .pp {
@@ -82,7 +83,7 @@ body {
       padding-top: 66px;
     }
   }
-  //menu 主方塊 左右滑動
+  //箭頭的 左右滑動
   #james:checked + .menu_box .menu_list .pp {
     transform: translate(0%);
     left: 78%;
@@ -90,16 +91,20 @@ body {
   #james:checked + .menu_box .menu_list .pp:after {
     transform: rotate(0deg);
   }
-  //menu左右滑動
+  //箭頭點擊 menu左右滑動
   #james:checked ~ .menu_box {
     transform: translate(0%);
   }
-  //公司左右滑動
-  #james:checked ~ .one{
+  //左右滑動
+  #james:checked ~ .one {
     width: calc(100% - 300px);
     left: 300px;
   }
-  #james:checked ~ .two{
+  #james:checked ~ .two {
+    width: calc(100% - 300px);
+    left: 300px;
+  }
+  #james:checked ~ .three {
     width: calc(100% - 300px);
     left: 300px;
   }
@@ -130,7 +135,7 @@ body {
       min-width: 130px;
       width: calc(100% / 5);
       height: 180px;
-      border-radius:5px; 
+      border-radius: 5px;
       margin: 8px 5px;
       display: block;
       background: #fff;
@@ -147,8 +152,8 @@ body {
       background: #a35cc9;
       text-align: center;
     }
-    li:hover{
-      filter: brightness(1.3)
+    li:hover {
+      filter: brightness(1.3);
     }
   }
   // 一般切版
@@ -179,15 +184,15 @@ body {
       height: 180px;
       margin: 8px 5px;
       display: block;
-      border-radius:5px; 
+      border-radius: 5px;
       background: #fff;
       pointer-events: auto;
       border: 2px solid #f34949;
       text-align: center;
       padding: 5px;
     }
-    li:hover{
-      filter: brightness(1.3)
+    li:hover {
+      filter: brightness(1.3);
     }
     & a {
       min-width: 100px;
@@ -196,6 +201,60 @@ body {
       display: block;
       background: #5c89c9;
       text-align: center;
+    }
+  }
+  // 小程式
+  .three {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.333);
+    padding-top: 66px;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    display: none;
+    > ul {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      padding: 5px;
+    }
+    & li {
+      max-width: 130px;
+      min-width: 130px;
+      width: calc(100% / 5);
+      height: 180px;
+      margin: 8px 5px;
+      display: block;
+      border-radius: 5px;
+      background: #fff;
+      pointer-events: auto;
+      border: 2px solid #f34949;
+      text-align: center;
+      padding: 5px;
+    }
+    li:hover {
+      filter: brightness(1.3);
+    }
+    & a {
+      min-width: 100px;
+      width: 100%;
+      height: 80%;
+      display: block;
+      background: #c9a65c;
+      text-align: center;
+
+      & .three_box1_img {
+        width: 100%;
+        height: 100%;
+        background: url(../img/Tictac.png) center center no-repeat;
+        background-size: cover;
+      }
     }
   }
 }
