@@ -18,6 +18,7 @@ let data = {
     { date: "2019/06/21", title: "隨機亂數", link: "https://booolink.github.io/Function/隨機亂數.html" },
     { date: "2019/08/05", title: "canvas", link: "https://booolink.github.io/PlayAGame/plan_1/index.html" },
     { date: "2019/08/07", title: "簡易便利貼", link: "https://booolink.github.io/PlayAGame/Postnotes/index.html" },
+    { date: "2019/08/15", title: "phaser", link: "https://booolink.github.io/PlayAGame/F2E/week5/index.html" },
   ]
 
 }
